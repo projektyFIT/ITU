@@ -1,0 +1,1 @@
+Nette Framework 2.0.12 (revision 80a7e46 released on 2013-08-08)
