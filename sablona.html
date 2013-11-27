@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cs" lang="cs">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Language" content="cs"/>
+    <meta name="author" content="Jiří Macků, xmacku03@stud.fit.vutbr.cz"/>
+    <title>ITU - Elektronická kuchařka</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="dropit.js"></script>
+    <link href="cooking-man.png" rel="icon" type="image/png" />
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.menu').dropit();
+        });
+    </script>
+</head>
+<body>
+	<div id="header">
+		<div id="head">
+			<div id="headshade"></div>
+			<div id="title">
+				<a href="#"><h1>ITU - Elektronická kuchařka</h1></a>
+			</div>
+			<img src="cooking-man.png" height="150" width="96" alt="kuchař"/>
+		</div>
+	</div>
+    <div id="page">
+		<div id="navig">
+			<ul class="menu">
+				<li>
+					<a href="#">Domů</a>
+				</li>
+				<li>
+					<a href="#">Kategorie</a>
+					<ul>
+						<li><a href="#">Polévky</a></li>
+						<li><a href="#">Jídla z hovězího masa</a></li>
+						<li><a href="#">Jídla z kuřecího masa</a></li>
+						<li><a href="#">Jídla z ryb</a></li>
+						<li><a href="#">Deserty</a></li>
+						<li><a href="#">Ostatní</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">Přidat recept</a>
+				</li>
+				<li class="rightmenu">
+					<form id="searchform" onmouseover="$(this).addClass('searchformover')" onmouseout="$(this).removeClass('searchformover')" >
+						<input class="searchfield" type="text" value="Hledej..." onfocus="if (this.value == 'Hledej...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Hledej...';}" />
+						<input class="searchbutton" type="submit" value="Hledat" />
+					</form>
+				</li>
+				<li class="rightmenu">
+					<a href="#">Rozšířené vyhledávání</a>
+				</li>
+			</ul>
+		</div>
+		
+		<div id="content">
+			<h2>Lorem ipsum dolor sit amet,</h2>
+			<p>consectetuer adipiscing elit. Vestibulum fermentum tortor id mi. Praesent dapibus. Fusce consectetuer risus a nunc. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Sed convallis magna eu sem. Sed elit dui, pellentesque a, faucibus vel, interdum nec, diam. Donec iaculis gravida nulla. Integer lacinia. Nullam at arcu a est sollicitudin euismod. Quisque porta. Integer vulputate sem a nibh rutrum consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nullam dapibus fermentum ipsum. Fusce wisi. Cras elementum. Aliquam erat volutpat. Proin in tellus sit amet nibh dignissim sagittis. Integer rutrum, orci vestibulum ullamcorper ultricies, lacus quam ultricies odio, vitae placerat pede sem sit amet enim.</p>
+			<p>Praesent in mauris eu tortor porttitor accumsan. Maecenas sollicitudin. Vivamus luctus egestas leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur vitae diam non enim vestibulum interdum. Aliquam erat volutpat. Duis condimentum augue id magna semper rutrum. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Aenean vel massa quis mauris vehicula lacinia. Aenean placerat. Aliquam in lorem sit amet leo accumsan lacinia. Vivamus luctus egestas leo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Aliquam erat volutpat.</p>
+			<p>Mauris dictum facilisis augue. Nunc auctor. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Etiam dui sem, fermentum vitae, sagittis id, malesuada in, quam. Praesent dapibus. Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit. Integer rutrum, orci vestibulum ullamcorper ultricies, lacus quam ultricies odio, vitae placerat pede sem sit amet enim. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque arcu. Praesent vitae arcu tempor neque lacinia pretium. Vestibulum erat nulla, ullamcorper nec, rutrum non, nonummy ac, erat. Fusce consectetuer risus a nunc. Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Et harum quidem rerum facilis est et expedita distinctio. Integer in sapien. Praesent dapibus. Nullam feugiat, turpis at pulvinar vulputate, erat libero tristique tellus, nec bibendum odio risus sit amet ante.</p>
+		</div>		
+		<div id="footer">
+			<h4>@2013 Jiří Macků, Vojtěch Meca, Martin Maga - Elektronická kuchařka</h4>
+		</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,211 @@
+html, body, div, span, applet, object, iframe, input,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline; 
+}
+body {
+    line-height: 1;
+    color: black;
+    background: #E0E0E0;
+    font-family: verdana, sans-serif;
+}
+#header {
+	height: 154px;
+	background: #EFD990;
+}
+#head {
+    position: relative;
+    padding-top: 10px;
+    height: 144px;
+	width: 800px;
+    margin: 0px auto;
+	background: #FFD240;
+}
+#headshade {
+    margin: 0px 0px 10px 10px;
+    height: 25px;
+    background: #DDB937;
+    border-left: 150px solid #A67F00;
+}
+#title {
+    margin: 55px 0px 0px 30px;
+}
+#head h1 {
+    font-size: 42px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+#head img {
+    position: absolute;
+    right: 20px;
+    top: 2px;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+#head a {
+    color: #77621E;
+    text-decoration: none;
+}
+#head a:hover {
+    color: #A67F00;
+}
+#page {
+	width: 800px;
+    margin: 0px auto;
+}
+#navig {
+    margin: 2px;
+    position: relative;
+}
+#navig ul {
+    list-style-type: none;
+}
+#navig ul li {
+    background: #A67F00;
+    min-height: 27px;
+    margin-right: 4px;
+    float: left;
+}
+#navig a {
+    font-size: 10pt;
+    padding: 5px 15px;
+    color: #FFC300;
+    vertical-align: -4px;
+    text-decoration: none;
+}
+#navig a:hover {
+    background: #FFC300;
+    color: #A67F00;
+}
+#navig .rightmenu {
+    margin-right: 0px;
+    margin-left: 4px;
+    float: right;
+}
+#searchform {
+	padding: 3px 5px;
+	background: #A67F00;
+}
+form#searchform.searchformover {
+    background: #FFC300;
+}
+form#searchform.searchformover .searchfield {
+    background: #FFC300;
+	color: #A67F00;
+}
+form#searchform.searchformover .searchbutton {
+    background: #A67F00;
+	color: #FFC300;
+}
+#searchform input {
+	font-size: 10pt;
+}
+#searchform .searchfield {
+	background: #A67F00;
+	padding: 2px;
+	width: 120px;
+	color: #FFC300;
+}
+#searchform .searchbutton {
+	color: #A67F00;
+	background: #FFC300;
+}
+#searchform .searchbutton:hover {
+	color: #EFD990;
+	background: #A67F00;
+}
+#searchform .searchbutton:active {
+	position: relative;
+	top: 1px;
+}
+.dropit {
+	padding: 0;
+	margin: 0;
+}
+.dropit .dropit-trigger {
+    position: relative;
+}
+.dropit .dropit-submenu {
+    position: absolute;
+    top: 100%;
+    left: -3px; /* dropdown left or right */
+    z-index: 1000;
+    display: none;
+    list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.dropit .dropit-open .dropit-submenu {
+    display: block;
+}
+.menu ul {
+    display: none;  /* Hide before plugin loads */
+}
+.menu ul.dropit-submenu {
+    padding: 0px 0px 1px 0px;
+    background: #E0E0E0;
+    margin: 2px 0 0 1px;
+}          
+.menu ul.dropit-submenu li {
+    margin: 1px 2px 1px 2px !important;
+    padding: 0px;
+}
+.menu ul.dropit-submenu a {
+    display: block;
+    line-height: 17px;
+    min-width: 150px;
+    background: #A67F00
+}
+.menu ul.dropit-submenu a:hover {
+    text-decoration: none;
+}
+#content {
+    padding: 25px;
+    border-top: 29px solid #E0E0E0;
+	min-height: 500px;
+	background: #FFFFFF;
+}
+#content h2{
+    padding-bottom: 10px;
+    color: #FFE373;
+    font-size: 18pt;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+#content p {
+    text-indent: 2em;
+    line-height: 120%;
+    padding-bottom: 10px;
+}
+#footer {
+	border-top: 1px solid #FFF;
+	border-right: 1px solid #FFF;
+	border-bottom: 10px solid #FFF;
+	border-left: 1px solid #FFF;
+	margin-bottom: 5px;
+	background: #A67F00;
+}
+#footer h4{
+    font-size: 10pt;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+	border-top: 1px solid #FFDE73;
+	border-bottom: 1px solid #FFDE73;
+	padding: 5px;
+	text-align: center;
+	color: #FFC300;
+}
