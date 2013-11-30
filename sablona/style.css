@@ -70,21 +70,23 @@ body {
     margin: 0px auto;
 }
 #navig {
-    margin: 2px;
+    border: 2px solid #E0E0E0;
+    background: #A67F00;
     position: relative;
 }
 #navig ul {
+    height: 27px;
     list-style-type: none;
 }
 #navig ul li {
-    background: #A67F00;
     min-height: 27px;
-    margin-right: 4px;
+    border-right: 3px solid #E0E0E0;
     float: left;
 }
 #navig a {
     font-size: 10pt;
     padding: 5px 15px;
+    background: #A67F00;
     color: #FFC300;
     vertical-align: -4px;
     text-decoration: none;
@@ -93,9 +95,9 @@ body {
     background: #FFC300;
     color: #A67F00;
 }
-#navig .rightmenu {
-    margin-right: 0px;
-    margin-left: 4px;
+#navig ul li.rightmenu {
+    border-right: 0px;
+    border-left: 3px solid #E0E0E0;
     float: right;
 }
 #searchform {
@@ -158,12 +160,14 @@ form#searchform.searchformover .searchbutton {
     display: none;  /* Hide before plugin loads */
 }
 .menu ul.dropit-submenu {
-    padding: 0px 0px 1px 0px;
+    height: auto !important;
+    padding: 0px 0px 2px 0px;
     background: #E0E0E0;
-    margin: 2px 0 0 1px;
+    margin: 2px 0 0 0;
 }          
 .menu ul.dropit-submenu li {
-    margin: 1px 2px 1px 2px !important;
+    margin: 1px 3px 1px 3px !important;
+    border: none !important;
     padding: 0px;
 }
 .menu ul.dropit-submenu a {
@@ -177,7 +181,6 @@ form#searchform.searchformover .searchbutton {
 }
 #content {
     padding: 25px;
-    border-top: 29px solid #E0E0E0;
 	min-height: 500px;
 	background: #FFFFFF;
 }
