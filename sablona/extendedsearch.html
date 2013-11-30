@@ -1,0 +1,105 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cs" lang="cs">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Language" content="cs"/>
+    <meta name="author" content="Jiří Macků, xmacku03@stud.fit.vutbr.cz"/>
+    <title>ITU - Elektronická kuchařka</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="dropit.js"></script>
+    <link href="cooking-man.png" rel="icon" type="image/png" />
+  
+       
+		
+		
+		
+
+	 <script type="text/javascript">
+	function kontrola()
+{
+
+
+window.alert("Úspešne ste vyhľadali podľa všetkých kategórií.");
+
+return true;
+}
+ $(document).ready(function() {
+            $('.menu').dropit();
+        });
+    </script>
+    </head>
+    <body>
+<div id="header">
+      <div id="head">
+    <div id="headshade"></div>
+    <div id="title"> <a href="#">
+      <h1>ITU - Elektronická kuchařka</h1>
+      </a> </div>
+    <img src="cooking-man.png" height="150" width="96" alt="kuchař"/> </div>
+    </div>
+<div id="page">
+      <div id="navig">
+    <ul class="menu">
+          <li> <a href="sablona.html">Domů</a> </li>
+          <li> <a href="#">Kategorie</a>
+        <ul>
+              <li><a href="#">Polévky</a></li>
+              <li><a href="#">Jídla z hovězího masa</a></li>
+              <li><a href="#">Jídla z kuřecího masa</a></li>
+              <li><a href="#">Jídla z ryb</a></li>
+              <li><a href="#">Deserty</a></li>
+              <li><a href="#">Ostatní</a></li>
+            </ul>
+      </li>
+          <li> <a href="#">Přidat recept</a> </li>
+          <li class="rightmenu">
+        <form id="searchform" onmouseover="$(this).addClass('searchformover')" onmouseout="$(this).removeClass('searchformover')" >
+              <input class="searchfield" type="text" value="Hledej..." onfocus="if (this.value == 'Hledej...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Hledej...';}" />
+              <input class="searchbutton" type="submit" value="Hledat" />
+            </form>
+      </li>
+          <li class="rightmenu"> <a href="#">Rozšířené vyhledávání</a> </li>
+        </ul>
+  </div>
+      <div id="content">
+    <form method="post"  name="formular" action="process_search.php" onsubmit="return kontrola();">
+       <label>Kategorie:</label><label>Čas prípravy:</label>
+       <br />
+       <br  />
+       <select name="ovoce">
+<option value="jb">Polévky</option>
+
+<option value="hs" selected="selected">Jídla z hovězího masa</option>
+<option value="hs" selected="selected">Jídla z kuřecího masaa</option><option value="hs" selected="selected">Jídla z ryb</option><option value="hs" selected="selected">Deserty</option>
+
+<option value="hs" selected="selected">Ostatní</option>
+</select>
+       <select name="ovoce">
+        <option value="jb" selected="selected">5-10 minút</option>
+        <option value="jb">11 - 30 minút</option>
+        <option value="jb">31 - 60 minút</option>
+         <option value="jb">Viac ako 60 minút</option>
+       
+      </select>
+      <br />
+            <br />
+            <label>Hľadať v názve</label>
+            <br />
+            <input type="text" value="Názov receptu" />
+            <br />
+            <label>Hladať v postupoch receptu:</label>
+            <br />
+            <textarea rows="10" cols="50">
+            </textarea>
+            <br />
+       <input type="submit" value="Hľadať">
+        </form>
+  </div>
+      <div id="footer">
+    <h4>@2013 Jiří Macků, Vojtěch Meca, Martin Maga - Elektronická kuchařka</h4>
+  </div>
+    </div>
+</body>
+</html>

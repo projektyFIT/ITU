@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cs" lang="cs">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Language" content="cs"/>
+    <meta name="author" content="Jiří Macků, xmacku03@stud.fit.vutbr.cz"/>
+    <title>ITU - Elektronická kuchařka</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="dropit.js"></script>
+    <link href="cooking-man.png" rel="icon" type="image/png" />
+  
+       
+		
+		
+		
+
+	 <script type="text/javascript">
+	function kontrola()
+{
+
+
+window.alert("Ďakujeme za Vašu objednávku. Na Vašu emailovú adresu Vám bolo zaslané potvrdenie o objednávke. Budete presmerovaný na hlavnú stránku");
+
+return true;
+}
+ $(document).ready(function() {
+            $('.menu').dropit();
+        });
+    </script>
+    </head>
+    <body>
+<div id="header">
+      <div id="head">
+    <div id="headshade"></div>
+    <div id="title"> <a href="#">
+      <h1>ITU - Elektronická kuchařka</h1>
+      </a> </div>
+    <img src="cooking-man.png" height="150" width="96" alt="kuchař"/> </div>
+    </div>
+<div id="page">
+      <div id="navig">
+    <ul class="menu">
+          <li> <a href="sablona.html">Domů</a> </li>
+          <li> <a href="#">Kategorie</a>
+        <ul>
+              <li><a href="#">Polévky</a></li>
+              <li><a href="#">Jídla z hovězího masa</a></li>
+              <li><a href="#">Jídla z kuřecího masa</a></li>
+              <li><a href="#">Jídla z ryb</a></li>
+              <li><a href="#">Deserty</a></li>
+              <li><a href="#">Ostatní</a></li>
+            </ul>
+      </li>
+          <li> <a href="#">Přidat recept</a> </li>
+          <li class="rightmenu">
+        <form id="searchform" onmouseover="$(this).addClass('searchformover')" onmouseout="$(this).removeClass('searchformover')" >
+              <input class="searchfield" type="text" value="Hledej..." onfocus="if (this.value == 'Hledej...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Hledej...';}" />
+              <input class="searchbutton" type="submit" value="Hledat" />
+            </form>
+      </li>
+          <li class="rightmenu"> <a href="#">Rozšířené vyhledávání</a> </li>
+        </ul>
+  </div>
+      <div id="content">
+    <form method="post"  name="formular" action="process.php" onsubmit="return kontrola();">
+          <input type="text" name="jmeno" value="ahoj" >
+          <select name="ovoce">
+        <option value="jb" selected="selected">5-10 minút</option>
+        <option value="jb">11 - 30 minút</option>
+        <option value="jb">31 - 60 minút</option>
+         <option value="jb">Viac ako 60 minút</option>
+       
+      </select><br /><br />
+      <label>Suroviny:</label> <label>Pridať obrázok</label>
+      <br />
+      <br />
+       <input type="text" name="jmeno" value="Surovina 1"> 
+        <input type="text" name="jmeno" value="Množstvo"><label>Obrázok</label><input name="Upload Saved Replay" type="file"/>
+         <br />
+      <br />
+        
+         <input type="text" name="jmeno" value="Surovina 2">
+          <input type="text" name="jmeno" value="Množstvo">
+ <br />
+      <br />          
+       <input type="text" name="jmeno" value="Surovina 3">
+            <input type="text" name="jmeno" value="Množstvo">
+         <br />
+      <br />  
+             <input type="text" name="jmeno" value="Surovina 4">
+              <input type="text" name="jmeno" value="Množstvo"> 
+        <br />
+      <label>Postup prípravy</label>
+      <br />
+      <br />
+      <textarea rows="18" cols="40">
+Sem napíšte postup prípravy.
+</textarea> 
+<br />
+<br />
+
+      <input type="submit" value="Submit">
+        </form>
+  </div>
+      <div id="footer">
+    <h4>@2013 Jiří Macků, Vojtěch Meca, Martin Maga - Elektronická kuchařka</h4>
+  </div>
+    </div>
+</body>
+</html>

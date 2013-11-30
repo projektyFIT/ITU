@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cs" lang="cs">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Language" content="cs"/>
+    <meta name="author" content="Jiří Macků, xmacku03@stud.fit.vutbr.cz"/>
+    <title>ITU - Elektronická kuchařka</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="dropit.js"></script>
+    <link href="cooking-man.png" rel="icon" type="image/png" />
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.menu').dropit();
+        });
+    </script>
+</head>
+<body>
+	<div id="header">
+		<div id="head">
+			<div id="headshade"></div>
+			<div id="title">
+				<a href="#"><h1>ITU - Elektronická kuchařka</h1></a>
+			</div>
+			<img src="cooking-man.png" height="150" width="96" alt="kuchař"/>
+		</div>
+	</div>
+    <div id="page">
+		<div id="navig">
+			<ul class="menu">
+				<li>
+					<a href="#">Domů</a>
+				</li>
+				<li>
+					<a href="#">Kategorie</a>
+					<ul>
+						<li><a href="#">Polévky</a></li>
+						<li><a href="#">Jídla z hovězího masa</a></li>
+						<li><a href="#">Jídla z kuřecího masa</a></li>
+						<li><a href="#">Jídla z ryb</a></li>
+						<li><a href="#">Deserty</a></li>
+						<li><a href="#">Ostatní</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="pridatrecept.html">Přidat recept</a>
+				</li>
+				<li class="rightmenu">
+					<form id="searchform" onmouseover="$(this).addClass('searchformover')" onmouseout="$(this).removeClass('searchformover')" >
+						<input class="searchfield" type="text" value="Hledej..." onfocus="if (this.value == 'Hledej...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Hledej...';}" />
+						<input class="searchbutton" type="submit" value="Hledat" />
+					</form>
+				</li>
+				<li class="rightmenu">
+					<a href="extendedsearch.html">Rozšířené vyhledávání</a>
+				</li>
+			</ul>
+		</div>
+		
+		<div id="content">
+		<h2>Výsledky vyhľadávania: "bram" </h2>
+        <br />
+        <div class="result"><a href="#"><img src="brambory.jpg" width="100" height="100" /> <p>Domáci bramboračka 1/2 - 1 hodina</p></a></div><br />
+         <div class="result"><a href="#"><img src="peceny_brambory.jpg" width="100" height="100" /> <p>Domáci bramboračka 1/2 - 1 hodina</p></a></div>
+		</div>		
+		<div id="footer">
+			<h4>@2013 Jiří Macků, Vojtěch Meca, Martin Maga - Elektronická kuchařka</h4>
+		</div>
+    </div>
+</body>
+</html>

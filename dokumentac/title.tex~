@@ -1,0 +1,49 @@
+\begin{titlepage}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=0.6]{logo.jpg}
+\end{center}
+\end{figure}
+
+
+\vfill
+
+\begin{center}
+\begin{Large}
+
+\end{Large}
+\bigskip
+\begin{Huge}
+Jazyk IFJ12 \\
+\end{Huge}
+\begin{large}
+Dokumentácia z predmetu IFJ a IAL \\
+\end{large}
+\end{center}
+
+\vfill
+
+\begin{center}
+\begin{Large}
+\today
+\end{Large}
+\end{center}
+
+\vfill
+
+\begin{flushleft}
+\begin{large}
+\begin{tabular}{ll}
+\textbf{Varianta - Tým 086, varianta a/3/II} \\ \\
+Hodnotenie: \\
+
+Viktor Malík 20\% xmalik00, \\ Martin Maga 20\% xmagam00, \\Vojtěch Meca 20\%  xmecav00 , \\  Vít Mojžíš 20\% xmojzi00(vedúci projektu), \\ Jiří Macků 20\% xmacku03 \\ \\
+Rozšírenie:
+\textbf{FUNEXP} \\
+  Fakulta Informačních Technologií \\
+  Vysoké Učení Technické v~Brně \\
+\end{tabular}
+\end{large}
+\end{flushleft}
+\end{titlepage}

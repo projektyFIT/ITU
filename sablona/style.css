@@ -209,3 +209,41 @@ form#searchform.searchformover .searchbutton {
 	text-align: center;
 	color: #FFC300;
 }
+
+input {
+border:1px solid;	
+}
+
+.image {
+position:absolute;
+left:750px;	
+	
+}
+
+.choose {
+position:absolute;
+	left:750px;
+	top:540px;
+	
+}
+.result {
+border:2px solid;
+border-radius:25px;	
+	
+}
+.result img {
+position:relative;
+left:20px;	
+top:10px;
+	
+}
+.result p {
+position:relative;
+left:300px;	
+top:-50px;
+	
+}
+.result a {
+text-decoration:none;	
+color:inherit;
+}
