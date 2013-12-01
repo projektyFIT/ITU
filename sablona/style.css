@@ -223,10 +223,10 @@ left:750px;
 	
 }
 
-.choose {
+.choose2 {
 position:absolute;
 	left:750px;
-	top:540px;
+	top:280px;
 	
 }
 .result {
@@ -244,9 +244,72 @@ top:10px;
 position:relative;
 left:300px;	
 top:-50px;
+font-family: 'Permanent Marker', cursive;
+	src: url('PermanentMarker.ttf');
 	
 }
 .result a {
 text-decoration:none;	
 color:inherit;
+}
+
+.hour {
+position:absolute;
+left:280px;	
+	font-family: 'Permanent Marker', cursive;
+	src: url('PermanentMarker.ttf');
+}
+p {
+	
+font-family: 'Permanent Marker', cursive;
+	src: url('PermanentMarker.ttf');	
+}
+.inline {
+	font-family: 'Permanent Marker', cursive;
+	src: url('PermanentMarker.ttf');
+position:relative;
+top:-35px;
+	left:500px;
+}
+.receipt {
+position:absolute;
+left:750px;
+	top:340px;	
+	
+}
+
+.suroviny {
+position:relative;
+top:-90px;	
+	left:120px;
+}
+
+.suroviny2 {
+position:relative;
+top:-58px;	
+	left:120px;
+}
+
+.right {
+	position:absolute;
+	left:840px;
+	top:250px;
+}
+
+.time {
+position:relative;
+left:220px;	
+}
+
+.choose {
+position:absolute;
+top:290px;
+left:740px;	
+	
+}
+
+.move_right {
+position:relative;
+left:650px;	
+	
 }

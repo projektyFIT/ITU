@@ -64,53 +64,33 @@ return true;
         </ul>
   </div>
       <div id="content">
-    <form method="post"  name="formular" action="process.php" onsubmit="return kontrola();">
-          <input type="text" name="jmeno" value="Domáci bramboračka" >
-          <select name="ovoce">
-        <option value="jb" selected="selected">5-10 minút</option>
-        <option value="jb">11 - 30 minút</option>
-        <option value="jb">31 - 60 minút</option>
-         <option value="jb">Viac ako 60 minút</option>
+      <p>Domáci bramboračka</p><span class="inline"><p>5-10 minút</p></span>
+ 
        
-      </select><br /><br />
-      <label>Suroviny:</label> <label>Pridať obrázok</label>
+      <br /><br />
+      <h2>Suroviny</h2>
       <br />
       <br />
-       <input type="text" name="jmeno" value="brambory"> 
-        <input type="text" name="jmeno" value="1 kg"><label><img src="cross.jpg" width="25" height="25"/>
-        
-        <div class="image"><img src="brambory.jpg" width="300px" height="200px" /></div></label><div class="choose2"><input name="Upload Saved Replay" type="file"/></div>
-         <br />
-      <br />
-        
-         <input type="text" name="jmeno" value="soľ">
-          <input type="text" name="jmeno" value="špetka"><img src="cross.jpg" width="25" height="25"/>
- <br />
-      <br />          
-       <input type="text" name="jmeno" value="mrkev">
-            <input type="text" name="jmeno" value="4ks"><img src="cross.jpg" width="25" height="25"/>
-         <br />
-      <br />  
-             <input type="text" name="jmeno" value="Surovina">
-              <input type="text" name="jmeno" value="Množstvo"><img src="cross.jpg" width="25" height="25"/>
-        <br />
-         <br />
-          <br /> <br /> <br />
-          <br /> <br /> <br />
-          <br /> <br /> <br />
-   
-       
+    <p>Brambory</p>
+    <p>Soľ</p>
+    <p>mrkev</p>
+       <div class="suroviny">
+        <p>1 kg</p>
+        <p>špetka</p>
+        <p>4 ks</p>
+        </div>
+       <span class="receipt"><img src="brambory.jpg" width="300px" height="200px" /></span>
      
-      <label>Postup prípravy</label>
+      <h2>Postup prípravy</h2>
       <br />
       <br />
-      <textarea rows="18" cols="80">
+     <p>
  mauris eu tortor porttitor accumsan. Maecenas sollicitudin. Vivamus luctus egestas leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur vitae diam non enim vestibulum interdum. Aliquam erat volutpat. Duis condimentum augue id magna semper rutrum. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Aenean vel massa quis mauris vehicula lacinia. Aenean placerat. Aliquam in lorem sit amet leo accumsan lacinia. Vivamus luctus egestas leo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Aliquam erat volutp
-</textarea> 
+<p>
 <br />
 <br />
-
-      <input type="submit" value="Uložiť">
+	<form>
+      <input type="submit" value="Editovať">
        <input type="submit" value="Zmazať">
         </form>
   </div>
