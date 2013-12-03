@@ -1,3 +1,48 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: dokumentace.aux
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: dokumentace.aux
 The style file: czechiso.bst
 Database file #1: dokumentace.bib
+Warning--I didn't find a database entry for "Stephne:Rozhrania"
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+You've used 1 entry,
+            3151 wiz_defined-function locations,
+            657 strings with 5596 characters,
+and the built_in function-call counts, 380 in all, are:
+= -- 18
+> -- 7
+< -- 0
++ -- 3
+- -- 2
+* -- 18
+:= -- 49
+add.period$ -- 2
+call.type$ -- 1
+change.case$ -- 3
+chr.to.int$ -- 0
+cite$ -- 1
+duplicate$ -- 40
+empty$ -- 45
+format.name$ -- 2
+if$ -- 77
+int.to.chr$ -- 0
+int.to.str$ -- 1
+missing$ -- 11
+newline$ -- 13
+num.names$ -- 2
+pop$ -- 23
+preamble$ -- 1
+purify$ -- 3
+quote$ -- 0
+skip$ -- 12
+stack$ -- 0
+substring$ -- 5
+swap$ -- 17
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 2
+warning$ -- 0
+while$ -- 2
+width$ -- 2
+write$ -- 18
+(There was 1 warning)

@@ -38,10 +38,10 @@ Užívateľské rozhranie bolo navrhované s cieľom maximálne zjednodušiť pr
 
 Výsledkom jednotlivých Obsahuje možnosti na zobrazenie jednotlivých kategórií jedál, fulltextové vyhľadávanie v názvoch, možnosť pridania receptu  a tak isto možnosť pokročilého vyhľadávania. V ďalšej kapitole sa bude zaoberať implementáciou riešenia. 
 
-
+\subsection{Inovatívnosť}
 
 \section{Implementácia}
-Táto kapitola sa zaoberá implementáciou a ukazuje možnosti implementácie elektronickej kuchařky. Pri implementácií bol využitý jazyk HTML verzie 5\footnote{http://cs.wikipedia.org/wiki/HTML5}, jazyk CSS verzie3\footnote{http://www.w3schools.com/css/css3_intro.asp}, JavaScript\footnote{http://cs.wikipedia.org/wiki/JavaScript} a PHP verzie 5\footnote{http://php.net/}. Práca bola rozdelená do menších celkov, ktoré boli postupne testované. Jednotlivý členovia tímu pracovali s každou častou aplikácie, minimálne pripomienkovali jeho implementáciu s cieľom vytvoriť aplikáciu, ktorá by bola čo maximálne responzívna. Boli rozvrhnuté činnosti, ktoré by mala aplikácia spĺňať a na základe nich a návrhu užívateľské rozhrania prebiehala samostná implementácia.
+Táto kapitola sa zaoberá implementáciou a ukazuje možnosti implementácie elektronickej kuchařky. Pri implementácií bol využitý jazyk HTML verzie 5\footnote{$http://cs.wikipedia.org/wiki/HTML5$}, jazyk CSS verzie3\footnote{$http://www.w3schools.com/css/css3_intro.asp$}, JavaScript\footnote{$http://cs.wikipedia.org/wiki/JavaScript$} a PHP verzie 5\footnote{$http://php.net/$}. Práca bola rozdelená do menších celkov, ktoré boli postupne testované. Jednotlivý členovia tímu pracovali s každou častou aplikácie, minimálne pripomienkovali jeho implementáciu s cieľom vytvoriť aplikáciu, ktorá by bola čo maximálne responzívna. Boli rozvrhnuté činnosti, ktoré by mala aplikácia spĺňať a na základe nich a návrhu užívateľské rozhrania prebiehala samostná implementácia.
 
 
 \section{Testovanie a vyhodnotenie}
@@ -76,15 +76,18 @@ Testy boli vyhotované s cieľom zistiť, aké je užívateľské rozhranie jedn
 Cieľom tohto testu boli otestovanie možnosti jednoduchého fulltextového vyhľadávania. Užívateľom s cieľom skupiny bola zadaná nasledujúca úloha: "Vyhľadajte jedlá, ktoré obsahujú v jedle "bramb" pomocou fulltextového vyhľadávania". Zapíšte koľko výsledkov vyhľadávanie vrátilo. Užívateľ musí správne lokalizovať pole pre fulltextové vyhľadávanie a zapísať d tohto poľa "bramb". Výsledok vyhľadávania by mal vrátiť 2 položky.
 
 \subsubsection{Test č.2}
-Cieľom tohto testu bolo otestovanie pridávania nového receptu. Užívatelia museli správne
+Cieľom tohto testu bolo otestovanie pridávania nového receptu. Zadanie znelo "Pridajte nový recept s názvom "Bramborové těstoviny" s dĺžkou prípravy 6 minút, ktorý bude mať 3 ľubovolné suroviny, nahrajte ľubovolný obrázok receptu a napíšte ľubolný recept, ktorý môže obsahovať aj nezmyselné vety." Užívatelia museli správne lokalizovať tlačidlo pre pridanie nového receptu.Následne sa im rozbrazil formulár, do ktorého mohli ľubovoľne písať. Museli správne vyuplniť názov receptu, vybrať zo zoznamu pre dĺžku prípravy interval 5-10 minút. Následne vyplniť 3 suroviny vrátane množstvo. Nahrať obrázok z disku počítača a následne vyplniť návod na prípravu.
 
 \subsubsection{Test č.3}
-
+Cieľom bolo testu bolo otestovať možnosť editovania receptu. Zadanie úlohy znelo nasledovne:"Editujte už pripravený recept. Zmeňte názov na ľubovolný iný, tak isto dĺžku prípravy, zrušte ľubovolnú surovinu a editujte postup". Užívateľ už mal predpripravené okno s editáciou, musel správne zmeniť jednotlivé hodnoty, lokalizovať tlačidlo na zmazanie suroviny a potvrdiť zmenu stlačením tlačidla uložiť.
 
 \subsubsection{Test č.4}
-
+Cieľom toho testu bolo otestovať pokročilé vyhľadávanie. Zadanie úlohy znelo: "Využite možnosť pokročilého vyhľadávania a vyhľadajte všetky recepty s dobou prípravy medzi 5-10 minút". Užívateľ musel správne lokalizovať možnosť pokročilého vyhľadávania. Následne bol presmerovaný na formulár, do ktorého mohol zadať viaceré možnosti. Musel správne vybrať z rolovacieho zoznamu 5-10 minút a nechať ostatné možnosti nezmenené.
 
 \subsubsection{Test č.5}
+Cieľom tohto bolo otestovať možnosť hodnotenia jednotlivých receptov. Zadanie úlohy znelo:"Využite možnosť hodnotenia receptu a zvoľte najlepšie hodnotenie pre recept." Užívateľ mal už predpripravené okno s receptom. Užívateľ musel správne lokalizovať možnosť hodnotenia, ktorá bola reprezentovaná hviezdičkami. Musel správne určiť váhu, ktorú musel priradiť receptu. Musel určiť , že 5 hviezdičiek odpovedá najlepšiemu hodnoteniu.
+
+
 
 
 \subsection{Vyhodnotenie dotazníku a testov}
@@ -94,30 +97,14 @@ Dotazník bol predložený respondentom, ktorý na to odpovedali v nasledovnej p
 
 \section{Záver}
 
+\newpage
+
 \section{Referencie}
 
 
 \bibliographystyle{czechiso}
 
 \bibliography{dokumentace}
-\newpage
-\section{Metriky kódu}
-
-\paragraph{Počet funkcií:} 97 funkcií
-\paragraph{Počet súborov:} 19 súborov
-\paragraph{Počet riadkov:}
-\begin{itemize}
-\item	  samotný kód:3240
-\item	  kód a komentáre:501
-\item	  samostatné komentáre:1248
-\item	  celkom:4989
-\end{itemize}
-\paragraph{Počet riadkov zdrojového textu:} 982  riadkov
-\paragraph{Veľkost statických dát:} 7696B
-\paragraph{Veľkosť spustiteľného suboru:} 96.7 kB (systém Fedora, 64 bitová
-architektúra, pri preklade bez ladiaciach informácií)
-
-\newpage 
 
 \end{document}
 

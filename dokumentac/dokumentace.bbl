@@ -8,9 +8,6 @@
 \providecommand{\selectlanguage}[1]{\relax}
 \providecommand{\eprint}[2][]{\url{#2}}
 
-\bibitem{Honzik:Algoritmy}
-HONZ\'{I}K, J.~M.: \emph{Algoritmy Studijní opora}. Brno:FIT VUT, 2012.
-
 \bibitem{Prokop:Algoritmy}
 PROKOP, J.: \emph{Algoritmov jazyku C a C++ :praktick\'{y} pr\r{u}vodce}.
   Brno:Grada Publishing, 2009, ISBN 978-80-247-2751-6.
