@@ -30,39 +30,48 @@ return true;
         });
     </script>
     </head>
-    <body>
-<div id="header">
-      <div id="head">
-    <div id="headshade"></div>
-    <div id="title"> <a href="#">
-      <h1>ITU - Elektronická kuchařka</h1>
-      </a> </div>
-    <img src="cooking-man.png" height="150" width="96" alt="kuchař"/> </div>
-    </div>
-<div id="page">
-      <div id="navig">
-    <ul class="menu">
-          <li> <a href="sablona.html">Domů</a> </li>
-          <li> <a href="#">Kategorie</a>
-        <ul>
-              <li><a href="#">Polévky</a></li>
-              <li><a href="#">Jídla z hovězího masa</a></li>
-              <li><a href="#">Jídla z kuřecího masa</a></li>
-              <li><a href="#">Jídla z ryb</a></li>
-              <li><a href="#">Deserty</a></li>
-              <li><a href="#">Ostatní</a></li>
-            </ul>
-      </li>
-          <li> <a href="#">Přidat recept</a> </li>
-          <li class="rightmenu">
-        <form id="searchform" onmouseover="$(this).addClass('searchformover')" onmouseout="$(this).removeClass('searchformover')" >
-              <input class="searchfield" type="text" value="Hledej..." onfocus="if (this.value == 'Hledej...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Hledej...';}" />
-              <input class="searchbutton" type="submit" value="Hledat" />
-            </form>
-      </li>
-          <li class="rightmenu"> <a href="extendedsearch.html">Rozšířené vyhledávání</a> </li>
-        </ul>
-  </div>
+<body>
+	<div id="header">
+		<div id="head">
+			<div id="headshade"></div>
+			<div id="title">
+				<a href="index.html"><h1>ITU - Elektronická kuchařka</h1></a>
+			</div>
+			<img src="cooking-man.png" height="150" width="96" alt="kuchař"/>
+		</div>
+	</div>
+    <div id="page">
+		<div id="navig">
+			<ul class="menu">
+				<li>
+					<a href="index.html">Domů</a>
+				</li>
+				<li>
+					<a>Kategorie</a>
+					<ul>
+						<li><a href="polevky.html">Polévky</a></li>
+						<li><a href="hovezi.html">Jídla z hovězího masa</a></li>
+						<li><a href="kureci.html">Jídla z kuřecího masa</a></li>
+						<li><a href="ryby.html">Jídla z ryb</a></li>
+						<li><a href="deserty.html">Deserty</a></li>
+						<li><a href="ostsni.html">Ostatní</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="pridatrecept.html">Přidat recept</a>
+				</li>
+				<li class="rightmenu">
+					<form id="searchform" action="results.html" onmouseover="$(this).addClass('searchformover')" onmouseout="$(this).removeClass('searchformover')" >
+						<input class="searchfield" type="text" value="Hledej..." onfocus="if (this.value == 'Hledej...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Hledej...';}" />
+						<input class="searchbutton" type="submit" value="Hledat" />
+					</form>
+				</li>
+				<li class="rightmenu">
+					<a href="extendedsearch.html">Rozšířené vyhledávání</a>
+				</li>
+			</ul>
+		</div>
+		
       <div id="content">
       <p>Pečený brambory</p><span class="inline"><p>11 - 30 minút</p></span>
  

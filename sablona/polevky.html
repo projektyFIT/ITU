@@ -1,7 +1,7 @@
-
+<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cs" lang="cs">
-    <head>
+<head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta http-equiv="Content-Language" content="cs"/>
     <meta name="author" content="Jiří Macků, xmacku03@stud.fit.vutbr.cz"/>
@@ -10,18 +10,12 @@
     <script type="text/javascript" src="jquery-1.9.1.min.js"></script>
     <script type="text/javascript" src="dropit.js"></script>
     <link href="cooking-man.png" rel="icon" type="image/png" />
-	<script type="text/javascript">
-		$(document).ready(function() {
+    <script type="text/javascript">
+        $(document).ready(function() {
             $('.menu').dropit();
         });
-        function kontrola() {
-			if (($("select[name='kategorie']").val() == "") && ($("select[name='time']").val() == "") && ($("input[name='nazev']").val() == "") && ($("textarea[name='popis']").val() == "")) {
-				alert("Vyplňte alespoň jedno vyhledávací pole.");
-				return false;
-			}
-		};
     </script>
-    </head>
+</head>
 <body>
 	<div id="header">
 		<div id="head">
@@ -65,33 +59,55 @@
 		</div>
 		
 		<div id="content">
-			<h2>Rozšířené vyhledávání</h2>
-			<form method="post" name="extsearch" action="results.html" onsubmit="return kontrola();">
-				<h3>Hledat podle kategorie</h3>
-				<select name="kategorie">
-					<option value="">Vyberte kategorii:</option>
-					<option value="polevky">Polévky</option>
-					<option value="hovezi">Jídla z hovězího masa</option>
-					<option value="kureci">Jídla z kuřecího masa</option>
-					<option value="ryby">Jídla z ryb</option>
-					<option value="deserty">Deserty</option>
-					<option value="ostatni">Ostatní</option>
-				</select>
-				<h3 class="right">Hledat podle doby přípřavy</h3>
-				<select name="time">
-					<option value="">Zvolte dobu přípravy:</option>
-					<option value="5-10">5-10 minut</option>
-					<option value="10-30">10 - 30 minut</option>
-					<option value="30-60">30 - 60 minut</option>
-					<option value="60>">60 minut a více</option>
-				</select>
-				<h3>Hledat podle názvu</h3>
-				<input type="text" name="nazev" value="" placeholder="Název receptu" />
-				<h3>Hledat v postupu receptu</h3>
-				<textarea name="popis" rows="5" cols="50" placeholder="Postup přípravy..."></textarea>
-				<input type="submit" name="hledat" value="Hledat">
-			</form>
-		</div>
+			<h2>Kategorie: Polévky</h2>
+			<div class="recipe">
+				<a href="bramboracka.html">
+					<div class="obr">
+						<img src="brambory.jpg"/>
+					</div>
+					<h3>Domácí bramboračka</h3>
+					<span>30 - 60 minut</span>
+				</a>
+			</div>
+			<div class="recipe">
+				<a href="cesnecka.html">
+					<div class="obr">
+						<img src="cesnecka.jpg"/>
+					</div>
+					<h3>Česnečka</h3>
+					<span>30 - 60 minut</span>
+				</a>
+			</div>
+			<div class="recipe">
+				<a href="rajska.html">
+					<div class="obr">
+						<img src="rajska.jpg"/>
+					</div>
+					<h3>Rajská polévka</h3>
+					<span>30 - 60 minut</span>
+				</a>
+			</div>
+			<div class="recipe">
+				<a href="zeleninova.html">
+					<div class="obr">
+						<img src="zeleninova.jpg"/>
+					</div>
+					<h3>Zeleninová polévka</h3>
+					<span>30 - 60 minut</span>
+				</a>
+			</div>
+			<div class="recipe">
+				<a href="slepici.html">
+					<div class="obr">
+						<img src="slepici.jpg"/>
+					</div>
+					<h3>Slepičí vývar s játrovými knedlíčky</h3>
+					<span>60 minut a více</span>
+				</a>
+			</div>
+			<a href="#" class="predchozi">&lt;&lt; Předchozí recepty</a>
+			<a href="#" class="dalsi">Další recepty &gt;&gt;</a>
+		</div>	
 		<div id="footer">
 			<h4>&copy2013 Jiří Macků, Vojtěch Meca, Martin Maga - Elektronická kuchařka</h4>
 		</div>

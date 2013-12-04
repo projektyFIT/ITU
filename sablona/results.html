@@ -21,7 +21,7 @@
 		<div id="head">
 			<div id="headshade"></div>
 			<div id="title">
-				<a href="#"><h1>ITU - Elektronická kuchařka</h1></a>
+				<a href="index.html"><h1>ITU - Elektronická kuchařka</h1></a>
 			</div>
 			<img src="cooking-man.png" height="150" width="96" alt="kuchař"/>
 		</div>
@@ -30,25 +30,25 @@
 		<div id="navig">
 			<ul class="menu">
 				<li>
-					<a href="#">Domů</a>
+					<a href="index.html">Domů</a>
 				</li>
 				<li>
-					<a href="#">Kategorie</a>
+					<a>Kategorie</a>
 					<ul>
-						<li><a href="#">Polévky</a></li>
-						<li><a href="#">Jídla z hovězího masa</a></li>
-						<li><a href="#">Jídla z kuřecího masa</a></li>
-						<li><a href="#">Jídla z ryb</a></li>
-						<li><a href="#">Deserty</a></li>
-						<li><a href="#">Ostatní</a></li>
+						<li><a href="polevky.html">Polévky</a></li>
+						<li><a href="hovezi.html">Jídla z hovězího masa</a></li>
+						<li><a href="kureci.html">Jídla z kuřecího masa</a></li>
+						<li><a href="ryby.html">Jídla z ryb</a></li>
+						<li><a href="deserty.html">Deserty</a></li>
+						<li><a href="ostsni.html">Ostatní</a></li>
 					</ul>
 				</li>
 				<li>
 					<a href="pridatrecept.html">Přidat recept</a>
 				</li>
 				<li class="rightmenu">
-					<form id="searchform" onmouseover="$(this).addClass('searchformover')" onmouseout="$(this).removeClass('searchformover')" >
-						<input class="searchfield" type="text" value="Hledej..." onfocus="if (this.value == 'Hledej...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Hledej...';}" />
+					<form id="searchform" name="search" action="results.html" onmouseover="$(this).addClass('searchformover')" onmouseout="$(this).removeClass('searchformover')">
+						<input class="searchfield" type="text"  value="" placeholder="Hledej..." required />
 						<input class="searchbutton" type="submit" value="Hledat" />
 					</form>
 				</li>
@@ -59,13 +59,57 @@
 		</div>
 		
 		<div id="content">
-		<h2>Výsledky vyhľadávania: "bram" </h2>
-        <br />
-        <div class="result"><a href="bramboracka.html"><img src="brambory.jpg" width="110" height="110" /> <p>Domáci bramboračka       <span class="hour">1/2 - 1 hodina</span></p></a></div><br />
-         <div class="result"><a href="peceny_brambory.html"><img src="peceny_brambory.jpg" width="110" height="110" /> <p>Pečený brambory     bramboračka <span class="hour">1/2 - 1 hodina</span></p></a></div>
-		</div>		
+		<h2>Výsledky vyhledávání: "bram" </h2>
+			<div class="recipe">
+				<a href="bramboracka.html">
+					<div class="obr">
+						<img src="brambory.jpg"/>
+					</div>
+					<h3>Domácí bramboračka</h3>
+					<span>30 - 60 minut</span>
+				</a>
+			</div>
+			<div class="recipe">
+				<a href="peceny_brambory.html">
+					<div class="obr">
+						<img src="peceny_brambory.jpg"/>
+					</div>
+					<h3>Pečené brambory</h3>
+					<span>11 - 30 minut</span>
+				</a>
+			</div>
+			<div class="recipe">
+				<a href="#">
+					<div class="obr">
+						<img src="salat.jpg"/>
+					</div>
+					<h3>Bramborový salát</h3>
+					<span>30 - 60 minut</span>
+				</a>
+			</div>
+			<div class="recipe">
+				<a href="#">
+					<div class="obr">
+						<img src="knedlik.jpg"/>
+					</div>
+					<h3>Bramborový knedlík</h3>
+					<span>60 minut a více</span>
+				</a>
+			</div>
+			<div class="recipe">
+				<a href="#">
+					<div class="obr">
+						<img src="bramborak.jpg"/>
+					</div>
+					<h3>Bramborák</h3>
+					<span>30 - 60 minut</span>
+				</a>
+			</div>
+			<a href="#" class="predchozi">&lt;&lt; Předchozí výsledky</a>
+			<a href="#" class="dalsi">Další výsledky &gt;&gt;</a>
+		</div>	
 		<div id="footer">
-			<h4>@2013 Jiří Macků, Vojtěch Meca, Martin Maga - Elektronická kuchařka</h4>
+			<h4>&copy2013 Jiří Macků, Vojtěch Meca, Martin Maga - Elektronická kuchařka</h4>
 		</div>
     </div>
 </body>

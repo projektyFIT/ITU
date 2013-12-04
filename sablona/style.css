@@ -121,10 +121,13 @@ form#searchform.searchformover .searchbutton {
 #searchform .searchfield {
 	background: #A67F00;
 	padding: 2px;
+	height: 17px;
 	width: 120px;
 	color: #FFC300;
+	border: none !important;
 }
 #searchform .searchbutton {
+    border: none;
 	color: #A67F00;
 	background: #FFC300;
 }
@@ -174,19 +177,22 @@ form#searchform.searchformover .searchbutton {
     display: block;
     line-height: 17px;
     min-width: 150px;
-    background: #A67F00
+    background: #A67F00;
 }
 .menu ul.dropit-submenu a:hover {
     text-decoration: none;
 }
 #content {
-    padding: 25px;
+    position: relative;
+    padding: 20px 25px;
 	min-height: 500px;
+	width: 750px;
 	background: #FFFFFF;
+	overflow: auto;
 }
 #content h2{
     padding-bottom: 10px;
-    color: #FFE373;
+    color: #FFC300;
     font-size: 18pt;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
@@ -194,6 +200,96 @@ form#searchform.searchformover .searchbutton {
     text-indent: 2em;
     line-height: 120%;
     padding-bottom: 10px;
+}
+#content a.predchozi{
+    margin: 10px;
+    float: left;
+    color: #A67F00;
+}
+#content a.dalsi{
+    margin: 10px;
+    float: right;
+    color: #A67F00;
+}
+.category {
+    margin: 6px;
+    border: 2px solid #A67F00;
+    display: inline-block;
+    width: 230px;
+    height: 170px;
+    background: #E0E0E0;
+}
+.category h3 {
+    margin: 0;
+    padding: 5px;
+    color: #A67F00;
+    border-bottom: 2px solid #A67F00;
+    font-size: 14pt;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background: #FFC300;
+}
+.category a {
+    text-decoration: none;
+}
+.category img {
+    display: block;
+    margin: 10px auto;
+    max-width: 210px;
+    max-height: 119px;
+}
+.recipe {
+    position: relative;
+    margin: 5px;
+    margin-bottom: 15px;
+    border: 2px solid #A67F00;
+    width: 736px;
+    height: 100px;
+    background: #E0E0E0;
+}
+.recipe a {
+    display: block;
+    text-decoration: none;
+    height: 100%;
+}
+.recipe .obr {
+    position: relative;
+    width: 144px;
+    height: 96px;
+    padding: 2px;
+    border-right: 2px solid #A67F00;
+    background:  #FFC300;
+}
+.recipe img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    max-width: 144px;
+    max-height: 96px;
+}
+.recipe h3 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 170px;
+    margin:  auto;
+    height: 1em;
+    color: #A67F00;
+    font-size: 16pt;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+.recipe span {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 20px;
+    margin: auto;
+    height: 1em;
+    color: #A67F00;
+    font-size: 16pt;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 #footer {
 	border-top: 1px solid #FFF;
@@ -212,104 +308,175 @@ form#searchform.searchformover .searchbutton {
 	text-align: center;
 	color: #FFC300;
 }
-
-input {
-border:1px solid;	
-}
-
-.image {
-position:absolute;
-left:750px;	
-	
-}
-
-.choose2 {
-position:absolute;
-	left:750px;
-	top:280px;
-	
-}
-.result {
-border:2px solid;
-border-radius:25px;	
-	
-}
-.result img {
-position:relative;
-left:20px;	
-top:10px;
-	
-}
-.result p {
-position:relative;
-left:300px;	
-top:-50px;
-font-family: 'Permanent Marker', cursive;
-	src: url('PermanentMarker.ttf');
-	
-}
-.result a {
-text-decoration:none;	
-color:inherit;
-}
-
-.hour {
-position:absolute;
-left:280px;	
-	font-family: 'Permanent Marker', cursive;
-	src: url('PermanentMarker.ttf');
-}
-p {
-	
-font-family: 'Permanent Marker', cursive;
-	src: url('PermanentMarker.ttf');	
-}
 .inline {
-	font-family: 'Permanent Marker', cursive;
-	src: url('PermanentMarker.ttf');
-position:relative;
-top:-35px;
-	left:500px;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    margin: 0 20px;
+    height: 1em;
+    color: #FFC300;
+    font-size: 16pt;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
-.receipt {
-position:absolute;
-left:750px;
-	top:340px;	
-	
+.obrazek {
+    float: right;
+    min-width: 150px;
+    min-height: 100px;
+    max-width: 350px;
+    max-height: 250px;
+    margin: 20px;
 }
-
-.suroviny {
-position:relative;
-top:-90px;	
-	left:120px;
+h3 {
+    margin: 10px 0;
+    height: 1em;
+    color: #A67F00;
+    font-size: 14pt;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
-
-.suroviny2 {
-position:relative;
-top:-58px;	
-	left:120px;
+input {
+    border:1px solid #A67F00;	
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
-
-.right {
-	position:absolute;
-	left:840px;
-	top:250px;
+select {	
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
-
-.time {
-position:relative;
-left:220px;	
+table.suroviny {
+    margin-bottom: 20px;
+    border-spacing: 4px;
 }
-
-.choose {
-position:absolute;
-top:290px;
-left:740px;	
-	
+.suroviny td {
+    padding: 5px;
+    width: 150px;
+    background: #A67F00;
+    color: #FFC300;
 }
-
-.move_right {
-position:relative;
-left:650px;	
-	
+.suroviny td:last-child {
+    width: 100px;
+    background: #FFC300;
+    color: #A67F00;
+}
+form input[name=nazev] {
+    margin-bottom: 5px;
+    color: #A67F00;
+    font-size: 16pt;
+    width: 500px;
+}
+form select[name=kategorie] {
+    display: block;
+    margin: 5px 0;
+    color: #FFC300;
+    font-size: 14pt;
+    width: 200px;
+}
+form select[name=time] {
+    position: absolute;
+    top: 55px;
+    right: 25px;
+    margin: 0 20px;
+    color: #FFC300;
+    font-size: 14pt;
+}
+form div.obrazek {
+    float: right;
+    margin: 20px 20px 5px 20px;
+}
+form .obrazek img {
+    min-width: 150px;
+    min-height: 100px;
+    max-width: 350px;
+    max-height: 250px;
+}
+form .obrazek label {
+    color: #A67F00;
+    font-size: 11pt;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+form input[name=imgupload] {
+    margin-top: 5px;
+    max-width: 348px;
+    width: 100%;
+    font-size: 11pt;
+}
+form .suroviny td {
+    vertical-align: top;
+    width: auto;
+    padding: 0px;
+    background: none;
+}
+form input[name=surovina] {
+    width: 150px;
+    background: #A67F00;
+    border: 1px solid #FFC300;
+    color: #FFC300;
+}
+form input[name=mnozstvi] {
+    width: 100px;
+    background: #FFC300;
+    border: 1px solid #A67F00;
+    color: #A67F00;
+}
+form .suroviny td:last-child {
+    width: auto;
+    background: none;
+}
+form .suroviny img {
+    border: 1px solid #A67F00;
+}
+form input[name=pridat] {
+    margin-bottom: 20px;
+    padding: 1px 10px;
+}
+form .postup {
+    float: left;
+}
+form textarea {
+    border:1px solid #A67F00;
+    margin-bottom: 10px;
+    width: 730px;
+    min-height: 50px;
+    resize: vertical;
+    font-size: 11pt;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+form input[name=ulozit], form input[name=zrusit] {
+    float: left;
+    padding: 2px 20px;
+    margin: 5px;
+}
+form input[name=pridat]:active, form input[name=ulozit]:active, form input[name=zrusit]:active, form .suroviny td:last-child img:active {
+	position: relative;
+	top: 1px;
+}
+form[name=extsearch] select[name=kategorie] {
+    color: #FFC300;
+    font-size: 12pt;
+    width: 200px;
+}
+form[name=extsearch] select[name=time] {
+    position: absolute;
+    top: 70px;
+    right: 25px;
+    margin: 20px;
+    width: 200px;
+    font-size: 12pt;
+}
+form[name=extsearch] .right {
+    position: absolute;
+    top: 45px;
+    right: 25px;
+    margin: 20px;
+}
+form[name=extsearch] input[name=nazev] {
+    margin: 0px;
+    color: #A67F00;
+    font-size: 14pt;
+    width: 200px;
+}
+form[name=extsearch] textarea {
+    width: 730px;
+    min-height: 50px;
+}
+form input[name=hledat] {
+    padding: 2px 20px;
+    margin: 5px;
 }

@@ -10,93 +10,86 @@
     <script type="text/javascript" src="jquery-1.9.1.min.js"></script>
     <script type="text/javascript" src="dropit.js"></script>
     <link href="cooking-man.png" rel="icon" type="image/png" />
-  
-       
-		
-		
-		
-
-	 <script type="text/javascript">
-	function kontrola()
-{
-
-
-window.alert("Ďakujeme za Vašu objednávku. Na Vašu emailovú adresu Vám bolo zaslané potvrdenie o objednávke. Budete presmerovaný na hlavnú stránku");
-
-return true;
-}
- $(document).ready(function() {
+	<script type="text/javascript">
+		$(document).ready(function() {
             $('.menu').dropit();
         });
     </script>
-    </head>
-    <body>
-<div id="header">
-      <div id="head">
-    <div id="headshade"></div>
-    <div id="title"> <a href="#">
-      <h1>ITU - Elektronická kuchařka</h1>
-      </a> </div>
-    <img src="cooking-man.png" height="150" width="96" alt="kuchař"/> </div>
-    </div>
-<div id="page">
-      <div id="navig">
-    <ul class="menu">
-          <li> <a href="sablona.html">Domů</a> </li>
-          <li> <a href="#">Kategorie</a>
-        <ul>
-              <li><a href="#">Polévky</a></li>
-              <li><a href="#">Jídla z hovězího masa</a></li>
-              <li><a href="#">Jídla z kuřecího masa</a></li>
-              <li><a href="#">Jídla z ryb</a></li>
-              <li><a href="#">Deserty</a></li>
-              <li><a href="#">Ostatní</a></li>
-            </ul>
-      </li>
-          <li> <a href="#">Přidat recept</a> </li>
-          <li class="rightmenu">
-        <form id="searchform" onmouseover="$(this).addClass('searchformover')" onmouseout="$(this).removeClass('searchformover')" >
-              <input class="searchfield" type="text" value="Hledej..." onfocus="if (this.value == 'Hledej...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Hledej...';}" />
-              <input class="searchbutton" type="submit" value="Hledat" />
-            </form>
-      </li>
-          <li class="rightmenu"> <a href="extendedsearch.html">Rozšířené vyhledávání</a> </li>
-        </ul>
-  </div>
-      <div id="content">
-      <p>Domáci bramboračka</p><span class="inline"><p>5-10 minút</p></span>
- 
-       
-      <br /><br />
-      <h2>Suroviny</h2>
-      <br />
-      <br />
-    <p>Brambory</p>
-    <p>Soľ</p>
-    <p>mrkev</p>
-       <div class="suroviny">
-        <p>1 kg</p>
-        <p>špetka</p>
-        <p>4 ks</p>
-        </div>
-       <span class="receipt"><img src="brambory.jpg" width="300px" height="200px" /></span>
-     
-      <h2>Postup prípravy</h2>
-      <br />
-      <br />
-     <p>
- mauris eu tortor porttitor accumsan. Maecenas sollicitudin. Vivamus luctus egestas leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur vitae diam non enim vestibulum interdum. Aliquam erat volutpat. Duis condimentum augue id magna semper rutrum. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Aenean vel massa quis mauris vehicula lacinia. Aenean placerat. Aliquam in lorem sit amet leo accumsan lacinia. Vivamus luctus egestas leo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Aliquam erat volutp
-<p>
-<br />
-<br />
-	<form>
-      <input type="submit" value="Editovať">
-       <input type="submit" value="Zmazať">
-        </form>
-  </div>
-      <div id="footer">
-    <h4>@2013 Jiří Macků, Vojtěch Meca, Martin Maga - Elektronická kuchařka</h4>
-  </div>
+</head>
+<body>
+	<div id="header">
+		<div id="head">
+			<div id="headshade"></div>
+			<div id="title">
+				<a href="index.html"><h1>ITU - Elektronická kuchařka</h1></a>
+			</div>
+			<img src="cooking-man.png" height="150" width="96" alt="kuchař"/>
+		</div>
+	</div>
+    <div id="page">
+		<div id="navig">
+			<ul class="menu">
+				<li>
+					<a href="index.html">Domů</a>
+				</li>
+				<li>
+					<a>Kategorie</a>
+					<ul>
+						<li><a href="polevky.html">Polévky</a></li>
+						<li><a href="hovezi.html">Jídla z hovězího masa</a></li>
+						<li><a href="kureci.html">Jídla z kuřecího masa</a></li>
+						<li><a href="ryby.html">Jídla z ryb</a></li>
+						<li><a href="deserty.html">Deserty</a></li>
+						<li><a href="ostsni.html">Ostatní</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="pridatrecept.html">Přidat recept</a>
+				</li>
+				<li class="rightmenu">
+					<form id="searchform" name="search" action="results.html" onmouseover="$(this).addClass('searchformover')" onmouseout="$(this).removeClass('searchformover')">
+						<input class="searchfield" type="text"  value="" placeholder="Hledej..." required />
+						<input class="searchbutton" type="submit" value="Hledat" />
+					</form>
+				</li>
+				<li class="rightmenu">
+					<a href="extendedsearch.html">Rozšířené vyhledávání</a>
+				</li>
+			</ul>
+		</div>
+		
+		<div id="content">
+			<h2>Domáci bramboračka</h2>
+			<span class="inline">3 - 60 minut</span>
+			<img class="obrazek" src="brambory.jpg"/>
+			<h3>Suroviny</h3>
+			<table class="suroviny">
+				<tr>
+					<td>Brambory</td>
+					<td>1 kg</td>
+				</tr>
+				<tr>
+					<td>Sůl</td>
+					<td>špetka</td>
+				</tr>
+				<tr>
+					<td>Mrkev</td>
+					<td>4ks</td>
+				</tr>
+			</table>
+			<h3>Postup přípravy</h3>
+			<p>
+				Maecenas sollicitudin. Vivamus luctus egestas leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur vitae diam non enim vestibulum interdum. Aliquam erat volutpat. Duis condimentum augue id magna semper rutrum.
+			</p>
+			<p>
+				Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Aenean vel massa quis mauris vehicula lacinia. Aenean placerat. Aliquam in lorem sit amet leo accumsan lacinia. Vivamus luctus egestas leo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Aliquam erat volutp.
+			</p>
+			<a href="edit.html" class="predchozi">Editovat</a>
+			<a href="index.html" class="dalsi" onclick="if (confirm('Opravdu chcete smazat tento recept')) { alert('Recept byl úspěšně smazán');}">Smazat</a>
+		</div>
+		<div id="footer">
+			<h4>&copy2013 Jiří Macků, Vojtěch Meca, Martin Maga - Elektronická kuchařka</h4>
+		</div>
     </div>
 </body>
 </html>

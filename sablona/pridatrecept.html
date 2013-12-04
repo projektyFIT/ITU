@@ -10,110 +10,119 @@
     <script type="text/javascript" src="jquery-1.9.1.min.js"></script>
     <script type="text/javascript" src="dropit.js"></script>
     <link href="cooking-man.png" rel="icon" type="image/png" />
-  
-       
-		
-		
-		
-
-	 <script type="text/javascript">
-	function kontrola()
-{
-
-
-window.alert("Ďakujeme za Vašu objednávku. Na Vašu emailovú adresu Vám bolo zaslané potvrdenie o objednávke. Budete presmerovaný na hlavnú stránku");
-
-return true;
-}
- $(document).ready(function() {
+	<script type="text/javascript">
+		$(document).ready(function() {
             $('.menu').dropit();
         });
+        function pridatSurovinu() {
+			$('.suroviny > tbody').append("<tr><td><input required type='text' name='surovina' value='' placeholder='surovina'/></td><td><input required type='text' name='mnozstvi' value=''  placeholder='množství'/></td><td onclick='odebratSurovinu(this);'><img src='cross.jpg' width='20' height='20'/></td></tr>");
+		}
+        function odebratSurovinu(node) {
+			try {
+			$(node).parent().remove();
+			} catch(e) {
+				alert(e);
+			}
+		}
     </script>
-    </head>
-    <body>
-<div id="header">
-      <div id="head">
-    <div id="headshade"></div>
-    <div id="title"> <a href="#">
-      <h1>ITU - Elektronická kuchařka</h1>
-      </a> </div>
-    <img src="cooking-man.png" height="150" width="96" alt="kuchař"/> </div>
-    </div>
-<div id="page">
-      <div id="navig">
-    <ul class="menu">
-          <li> <a href="sablona.html">Domů</a> </li>
-          <li> <a href="#">Kategorie</a>
-        <ul>
-              <li><a href="#">Polévky</a></li>
-              <li><a href="#">Jídla z hovězího masa</a></li>
-              <li><a href="#">Jídla z kuřecího masa</a></li>
-              <li><a href="#">Jídla z ryb</a></li>
-              <li><a href="#">Deserty</a></li>
-              <li><a href="#">Ostatní</a></li>
-            </ul>
-      </li>
-          <li> <a href="#">Přidat recept</a> </li>
-          <li class="rightmenu">
-        <form id="searchform" onmouseover="$(this).addClass('searchformover')" onmouseout="$(this).removeClass('searchformover')" >
-              <input class="searchfield" type="text" value="Hledej..." onfocus="if (this.value == 'Hledej...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Hledej...';}" />
-              <input class="searchbutton" type="submit" value="Hledat" />
-            </form>
-      </li>
-          <li class="rightmenu"> <a href="#">Rozšířené vyhledávání</a> </li>
-        </ul>
-  </div>
-      <div id="content">
-    <form method="post"  name="formular" action="process.php" onsubmit="return kontrola();">
-          <input type="text" name="jmeno" value="Názov receptu" size="35">
-         <span class="time">
-          <select name="ovoce">
-        <option value="jb" selected="selected">5-10 minút</option>
-        <option value="jb">11 - 30 minút</option>
-        <option value="jb">31 - 60 minút</option>
-         <option value="jb">Viac ako 60 minút</option>
-       
-      </select>
-      </span>
-      <br /><br />
-      <label>Suroviny:</label> <p class="right">Pridať obrázok</p>
-      <br />
-      <br />
-       <input type="text" name="jmeno" value="Surovina 1"> 
-        <input type="text" name="jmeno" value="Množstvo" size="15"> <div class="choose"><input name="Upload Saved Replay" type="file"/></div>
-         <br />
-      <br />
-        
-         <input type="text" name="jmeno" value="Surovina 2">
-          <input type="text" name="jmeno" value="Množstvo" size="15">
- <br />
-      <br />          
-       <input type="text" name="jmeno" value="Surovina 3">
-            <input type="text" name="jmeno" value="Množstvo" size="15">
-         <br />
-      <br />  
-             <input type="text" name="jmeno" value="Surovina 4">
-              <input type="text" name="jmeno" value="Množstvo" size="15"> 
-              <br  />
-               <br  />
-               <input type="submit" value="+ Ďalšia surovina">
-        <br />
-          <br />
-      <label>Postup prípravy</label>
-      <br />
-      <br />
-      <textarea rows="18" cols="85">
-Sem napíšte postup prípravy.
-</textarea> 
-<br />
-<br />
-
-     <span class="move_right"> <input type="submit" value="Uložiť" height="25"></span>
-        </form>
-  </div>
-      <div id="footer">
-    <h4>@2013 Jiří Macků, Vojtěch Meca, Martin Maga - Elektronická kuchařka</h4>
-  </div>
+<body>
+	<div id="header">
+		<div id="head">
+			<div id="headshade"></div>
+			<div id="title">
+				<a href="index.html"><h1>ITU - Elektronická kuchařka</h1></a>
+			</div>
+			<img src="cooking-man.png" height="150" width="96" alt="kuchař"/>
+		</div>
+	</div>
+    <div id="page">
+		<div id="navig">
+			<ul class="menu">
+				<li>
+					<a href="index.html">Domů</a>
+				</li>
+				<li>
+					<a>Kategorie</a>
+					<ul>
+						<li><a href="polevky.html">Polévky</a></li>
+						<li><a href="hovezi.html">Jídla z hovězího masa</a></li>
+						<li><a href="kureci.html">Jídla z kuřecího masa</a></li>
+						<li><a href="ryby.html">Jídla z ryb</a></li>
+						<li><a href="deserty.html">Deserty</a></li>
+						<li><a href="ostsni.html">Ostatní</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="pridatrecept.html">Přidat recept</a>
+				</li>
+				<li class="rightmenu">
+					<form id="searchform" name="search" action="results.html" onmouseover="$(this).addClass('searchformover')" onmouseout="$(this).removeClass('searchformover')" >
+						<input class="searchfield" type="text" value="" placeholder="Hledej..." required />
+						<input class="searchbutton" type="submit" value="Hledat" />
+					</form>
+				</li>
+				<li class="rightmenu">
+					<a href="extendedsearch.html">Rozšířené vyhledávání</a>
+				</li>
+			</ul>
+		</div>
+		
+		<div id="content">
+			<h2>Vložit nový recept</h2>
+			<form method="post"  name="edit" action="index.html" onsubmit="alert('Recept byl úspěšně uložen')">
+				<input type="text" name="nazev" value="" placeholder="Název receptu" required />
+				<select name="kategorie" required >
+					<option value="">Vyberte kategorii:</option>
+					<option value="polevky">Polévky</option>
+					<option value="hovezi">Jídla z hovězího masa</option>
+					<option value="kureci">Jídla z kuřecího masa</option>
+					<option value="ryby">Jídla z ryb</option>
+					<option value="deserty">Deserty</option>
+					<option value="ostatni">Ostatní</option>
+				</select>
+				<select name="time" required>
+					<option value="">Doba přípravy:</option>
+					<option value="5-10">5-10 minut</option>
+					<option value="10-30">10 - 30 minut</option>
+					<option value="30-60">30 - 60 minut</option>
+					<option value="60>">60 minut a více</option>
+				</select>
+				<div class="obrazek">
+					<label>Přidat obrázek</label>
+					<input name="imgupload" type="file" accept="image/*" required />
+				</div>
+				<h3>Suroviny:</h3>
+				<table class="suroviny">
+					<tbody>
+						<tr>
+							<td><input required type="text" name="surovina" value=""  placeholder="surovina"/></td>
+							<td><input required type="text" name="mnozstvi" value="" placeholder="množství"/></td>
+							<td onclick="odebratSurovinu(this);"><img src="cross.jpg" width="20" height="20"/></td>
+						</tr>
+						<tr>
+							<td><input required type="text" name="surovina" value=""  placeholder="surovina"/></td>
+							<td><input required type="text" name="mnozstvi" value="" placeholder="množství"/></td>
+							<td onclick="odebratSurovinu(this);"><img src="cross.jpg" width="20" height="20"/></td>
+						</tr>
+						<tr>
+							<td><input required type="text" name="surovina" value=""  placeholder="surovina"/></td>
+							<td><input required type="text" name="mnozstvi" value="" placeholder="množství"/></td>
+							<td onclick="odebratSurovinu(this);"><img src="cross.jpg" width="20" height="20"/></td>
+						</tr>
+					</tbody>
+				</table>
+				<input type="button" name="pridat" value="Přidat surovinu" onclick="pridatSurovinu();">
+				<div class="postup">
+					<h3>Postup přípravy</h3>
+					<textarea required cols="80" rows="10" placeholder="Sem napište postup přípravy receptu"></textarea> 
+				</div>
+				<input type="submit" name="ulozit" value="Uložit" />
+				<input type="button" name="zrusit" value="Zrušit" onclick="if (confirm('Opravdu chcete zrušit přidání nového receptu')) { window.location.href = 'pridatrecept.html';}"/>
+			</form>
+		</div>
+		<div id="footer">
+			<h4>&copy2013 Jiří Macků, Vojtěch Meca, Martin Maga - Elektronická kuchařka</h4>
+		</div>
     </div>
 </body>
 </html>
