@@ -26,7 +26,7 @@
 \newpage
 
 \section{Úvod}
-Táto dokumentácia sa zaoberá vývojom, implementáciou a testovaním elektornickej kuchařky. Je rozdelená do kapitól, ktoré sa zaoberajú rôznymi aspektami projektu.\cite{Prokop:Algoritmy}.Túto tému sme si vybrali z dôvodu vysokého dopytu užívateľov pre daný typ aplikácie a možnosť súkromného využitia. 
+Táto dokumentácia sa zaoberá vývojom, implementáciou a testovaním elektornickej kuchařky. Je rozdelená do kapitól, ktoré sa zaoberajú rôznymi aspektami projektu.Túto tému sme si vybrali z dôvodu vysokého dopytu užívateľov pre daný typ aplikácie a možnosť súkromného využitia. 
 
 
 \section{Motivácia}
@@ -34,6 +34,47 @@ Počítače stále viac a viac vnikajú do bežných činností človeka a snaž
 
 \section{Grafické rozhranie}
 Užívateľské rozhranie bolo navrhované s cieľom maximálne zjednodušiť prácu užívateľa s aplikáciou. Aby kĺadlo dôraz na jednoduchosť a miernu inovatívnosť riešenia. Užívateľ je schopný sa s rozhraním pomerne rýchlo zoznámiť a plne ho využívať pre dosiahnutie svojich výsledkov. Jednotlivé časti sú farebne rozdelené, aby možnosti, ktoré užívateľ bude využívať pomerne často mal stále na očiach. Rozhranie sa skladá z hlavnej lišty, ktorá je prístupná v každom okamihu práce s aplikáciou. Pred samotnou fázou implementácie prebiehali viaceré stretnutia členov tímu, ktorých cieľom bolo návrh optimálne a dostatočne jednoduché rozhranie pre používanie boli tam pridané inovatívne prvky, ktorých cieľom bolo spestriť a zaujať užívateĺa o naše riešenie.\cite{Stephen:Rozhrania}
+\begin{figure}[h]
+
+\begin{center}
+
+\includegraphics[scale=0.7]{img/sablona4.eps} 
+\caption{Ukážka zobrazenia výsledkov}
+\label{koncept}
+
+\end{center}
+
+\end{figure}
+
+
+
+
+
+
+
+\begin{figure}[h]
+
+\begin{center}
+
+\includegraphics[scale=0.7]{img/sablona3.eps} 
+\caption{Ukážka zobrazenia výsledkov}
+\label{koncept}
+
+\end{center}
+
+\end{figure}
+
+\begin{figure}[h]
+
+\begin{center}
+
+\includegraphics[scale=0.7]{img/sablona2.eps} 
+\caption{Ukážka hlavičky}
+\label{koncept}
+
+\end{center}
+
+\end{figure}
 
 
 Výsledkom jednotlivých Obsahuje možnosti na zobrazenie jednotlivých kategórií jedál, fulltextové vyhľadávanie v názvoch, možnosť pridania receptu  a tak isto možnosť pokročilého vyhľadávania. V ďalšej kapitole sa bude zaoberať implementáciou riešenia. 
@@ -44,8 +85,11 @@ Aplikácia neprínašla veľa nových možností. Ponúkala štandardné funkcie
 
 
 \section{Implementácia}
-Táto kapitola sa zaoberá implementáciou a ukazuje možnosti implementácie elektronickej kuchařky. Pri implementácií bol využitý jazyk HTML verzie 5\footnote{$http://cs.wikipedia.org/wiki/HTML5$}, jazyk CSS verzie3\footnote{$http://www.w3schools.com/css/css3_intro.asp$}, JavaScript\footnote{$http://cs.wikipedia.org/wiki/JavaScript$} a PHP verzie 5\footnote{$http://php.net/$}. Práca bola rozdelená do menších celkov, ktoré boli postupne testované. Jednotlivý členovia tímu pracovali s každou častou aplikácie, minimálne pripomienkovali jeho implementáciu s cieľom vytvoriť aplikáciu, ktorá by bola čo maximálne responzívna. Boli rozvrhnuté činnosti, ktoré by mala aplikácia spĺňať a na základe nich a návrhu užívateľské rozhrania prebiehala samostná implementácia. Implementácia prebehla napísaním základnej šablóny, ktorá obsahovala pevnú hlavičku, ktorá obsahovala všetky možnosti
+Táto kapitola sa zaoberá implementáciou a ukazuje možnosti implementácie elektronickej kuchařky. Pri implementácií bol využitý jazyk HTML verzie 5\footnote{$http://cs.wikipedia.org/wiki/HTML5$}, jazyk CSS verzie3\footnote{$http://www.w3schools.com/css/css3_intro.asp$}, JavaScript\footnote{$http://cs.wikipedia.org/wiki/JavaScript$} a PHP verzie 5\footnote{$http://php.net/$}. Práca bola rozdelená do menších celkov, ktoré boli postupne testované. Jednotlivý členovia tímu pracovali s každou častou aplikácie, minimálne pripomienkovali jeho implementáciu s cieľom vytvoriť aplikáciu, ktorá by bola čo maximálne responzívna. Boli rozvrhnuté činnosti, ktoré by mala aplikácia spĺňať a na základe nich a návrhu užívateľské rozhrania prebiehala samostná implementácia. Implementácia prebehla napísaním základnej šablóny, ktorá obsahovala pevnú hlavičku, ktorá obsahovala všetky možnosti. Následne sa určili činnosti, ktoré musí spĺnať podľa toho sa vytvárali postupné stránky a k tomu prislúchajúce php súbory na spracovanie dát, prípadne správnu reakciu podľa požiadaviek užívateľa.\cite{Prokop:Algoritmy}
 
+
+\section{Inštalácia}
+Výsledný projekt sa skladá so súborov s príponou .php, .css, .html, .js. Z toho dôvodu je potrebné mať k dispozícií webový server, na ktorom pobežia všetky potrebné služby. Hlavne treba, aby tento server podporoval MySQL minimálne vo verzii 5 a PHP vo verzii 5. Je potrebné naprv správne vytvoriť databázu podľa návrhu a následne ju naplň nejakými dátami(receptami). Pre správny beh je potrebné nastaviť oprávnenie 777 pre súbory s príponou php, pre ostatné súbory a priečinky oprávnenia 664.
 
 \section{Testovanie a vyhodnotenie}
 Aplikácia bola umiestnená na školský server odkiaľ ju mali prístupnú všetci užívatelia. Testovanie prebiehalo na základe dotazníka, ktorý bol predloženým cieľovým skupinám. Ďalej prebehlo vyhotovenie testov, kde sa merali rôzne veličiny typicky rýchlosť splnenia danej akcie a počet zbytočných pohybov. Na základe týchto testov sme mohli vyhodniť rôzne aspekty nášho užívatelského rozhrania. 
@@ -69,6 +113,8 @@ Dotazník sa skladal z nasledujúcich otázok:
 \item Je niečo čo na našej aplikácií oceňujete ?
 \item Máte nejaké iné propomienky k aplikácií ?
 \item Vedeli by te používať elektronickú kuchárku miesto jej papierovej podoby ?
+\item Skúšali ste k aplikácií pristupovať cez Váš mobilný telefón ?
+
 
 \end{itemize}
 
@@ -95,11 +141,13 @@ Cieľom tohto bolo otestovať možnosť hodnotenia jednotlivých receptov. Zadan
 
 \subsection{Vyhodnotenie dotazníku a testov}
 
-Dotazník bol predložený respondentom, ktorý na to odpovedali v nasledovnej podobe. 
+Dotazník bol predložený respondentom, ktorý na to odpovedali v nasledovnej podobe. Dospeli sme k veľmi zaujímavý výsledkom, ktoré nám pomohli priblížiťt zmýšlanie ľudí a ich prácu s novými užívateľskými rozhraniami.
 
+\section{Použité zdroje}
+Pri návrhu a implementácií užívateľského rozhrania sme využili rôzne informačné zdroje, ktoré nám pomohli a ozrejmili implementáciu. Hlavný zdrojom informácií boli manuálové stránky k použitým implementačným jazyk. Niekedy sme narážali na problém v anglickej lokalizácií a problém s porozumením pojmov a funkcií. Veľmi nám ale pomohli ilustrované príklady, ktoré sa nachádzali taktiež na manuálovej stránke. Rovnako sme informovali o dostupných elektronických kuchařkách a použitých užívateľských rozhraniach. Pre získanie ďalších hodnoverných informácií sme využili dostupnú literatúru. Táto je spomenutá v kapitole "Reference".
 
 \section{Záver}
-
+Cieľom tejto dokumentácie bolo ukázať možnosť implementácie elektronickej kuchařky. Rovnako bolo ukázané navrhnuté užívateľské rozhranie, ktoré bolo navrhnuté so zreteľom na maximálnu jednoduchosť a inovatívny prístup. Pomocou dotazníku a testov sme došli k záverom, že návrh rozhrania sa dá ešte vylepšiť, aby odpovedal požiadavkam užívateľom. Rovnako sme získali skúsenosť s tvorbou dotazníkov a testov a prácu s užívateľmi. Dotazy užívateľov nás podnietil k novej činnosti a pridali nám nové skúsenosti, ktoré využijeme v budúcnosti pri tvorbe užívateľských rozhraní.
 \newpage
 
 \section{Referencie}

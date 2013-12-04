@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2012.8.2)  3 DEC 2013 21:42
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2012.8.2)  4 DEC 2013 20:02
 entering extended mode
  %&-line parsing enabled.
 **dokumentace.tex
@@ -428,7 +428,14 @@ Package: geometry 2008/12/21 v4.2 Page Geometry
 \Gm@odd@mp=\dimen111
 \Gm@even@mp=\dimen112
 \Gm@dimlist=\toks21
-) (./dokumentace.aux)
+) (./dokumentace.aux
+
+LaTeX Warning: Label `koncept' multiply defined.
+
+
+LaTeX Warning: Label `koncept' multiply defined.
+
+)
 \openout1 = `dokumentace.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
@@ -447,8 +454,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
 LaTeX Font Info:    ... okay on input line 21.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 21.
 LaTeX Font Info:    ... okay on input line 21.
-
-(/usr/share/texmf-texlive/tex/latex/graphics/color.sty
+ (/usr/share/texmf-texlive/tex/latex/graphics/color.sty
 Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 
 (/etc/texmf/tex/latex/config/color.cfg
@@ -542,53 +548,72 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \openout4 = `dokumentace.toc'.
 
  [1]
-Overfull \hbox (18.14929pt too wide) in paragraph at lines 36--37
+File: img/sablona4.eps Graphic file (type eps)
+ <img/sablona4.eps>
+Overfull \hbox (18.14929pt too wide) in paragraph at lines 36--48
 \OT1/cmr/m/n/12 U^^Tz^^S^^Pvatel[]sk^^Se roz-hra-nie bolo na-vr-ho-van^^Se s ci
 el[]om ma-xim^^Salne zjed-nodu^^Tsit[] pr^^Sacu u^^Tz^^S^^Pvatel[]a s aplik^^Sa
 ciou.
  []
 
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: img/sablona3.eps Graphic file (type eps)
+<img/sablona3.eps>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: img/sablona2.eps Graphic file (type eps)
+<img/sablona2.eps>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 47.
-[2]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 55.
+(Font)              <5> on input line 88.
+[2] [3] [4]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 99.
  (/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 55.
- [3]
-Overfull \hbox (16.54341pt too wide) in paragraph at lines 79--80
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 99.
+ [5]
+Overfull \hbox (16.54341pt too wide) in paragraph at lines 125--126
 \OT1/cmr/m/n/12 Ciel[]om tohto testu boli otes-to-va-nie mo^^Tznosti jed-no-duc
 h^^Seho full-tex-tov^^Seho vyhl[]ad^^Savania. U^^Tz^^S^^Pvatel[]om
  []
 
 
-Overfull \hbox (35.61314pt too wide) in paragraph at lines 85--86
+Overfull \hbox (35.61314pt too wide) in paragraph at lines 131--132
 \OT1/cmr/m/n/12 Ciel[]om bolo testu bolo otes-to-vat[] mo^^Tznost[] edi-to-va-n
 ia re-ceptu. Za-da-nie ^^Sulohy znelo na-sle-dovne:"Editujte
  []
 
-
-Overfull \hbox (2.20872pt too wide) in paragraph at lines 88--89
+[6]
+Overfull \hbox (2.20872pt too wide) in paragraph at lines 134--135
 \OT1/cmr/m/n/12 Ciel[]om toho testu bolo otes-to-vat[] po-kro^^Tcil^^Se vyhl[]a
 d^^Savanie. Za-da-nie ^^Sulohy znelo: "Vyu^^Tzite mo^^Tznost[]
  []
 
 
-Overfull \hbox (27.48405pt too wide) in paragraph at lines 91--92
+Overfull \hbox (27.48405pt too wide) in paragraph at lines 137--138
 \OT1/cmr/m/n/12 Ciel[]om tohto bolo otes-to-vat[] mo^^Tznost[] hod-no-te-nia je
 d-not-liv^^Sych re-cep-tov. Za-da-nie ^^Sulohy znelo:"Vyu^^Tzite
  []
 
-[4] [5] (./dokumentace.bbl) [6] (./dokumentace.aux) ) 
+[7] [8] (./dokumentace.bbl) [9] (./dokumentace.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 6311 strings out of 493858
- 85115 string characters out of 1153329
- 164122 words of memory out of 3000000
- 9507 multiletter control sequences out of 15000+50000
+ 6323 strings out of 493858
+ 85258 string characters out of 1153329
+ 166122 words of memory out of 3000000
+ 9515 multiletter control sequences out of 15000+50000
  10056 words of font info for 35 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 38i,8n,36p,1152b,326s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,8n,36p,1221b,378s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on dokumentace.dvi (7 pages, 39704 bytes).
+Output written on dokumentace.dvi (10 pages, 48776 bytes).
