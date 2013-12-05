@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2012.8.2)  4 DEC 2013 20:02
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2012.8.2)  5 DEC 2013 20:08
 entering extended mode
  %&-line parsing enabled.
 **dokumentace.tex
@@ -435,6 +435,18 @@ LaTeX Warning: Label `koncept' multiply defined.
 
 LaTeX Warning: Label `koncept' multiply defined.
 
+
+LaTeX Warning: Label `koncept' multiply defined.
+
+
+LaTeX Warning: Label `koncept' multiply defined.
+
+
+LaTeX Warning: Label `koncept' multiply defined.
+
+
+LaTeX Warning: Label `koncept' multiply defined.
+
 )
 \openout1 = `dokumentace.aux'.
 
@@ -548,72 +560,84 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \openout4 = `dokumentace.toc'.
 
  [1]
-File: img/sablona4.eps Graphic file (type eps)
- <img/sablona4.eps>
+File: img/home.eps Graphic file (type eps)
+ <img/home.eps>
 Overfull \hbox (18.14929pt too wide) in paragraph at lines 36--48
 \OT1/cmr/m/n/12 U^^Tz^^S^^Pvatel[]sk^^Se roz-hra-nie bolo na-vr-ho-van^^Se s ci
 el[]om ma-xim^^Salne zjed-nodu^^Tsit[] pr^^Sacu u^^Tz^^S^^Pvatel[]a s aplik^^Sa
 ciou.
  []
 
+File: img/edit.eps Graphic file (type eps)
+<img/edit.eps>
+File: img/pridatrecept.eps Graphic file (type eps)
+ <img/pridatrecept.eps>
+File: img/kategorie.eps Graphic file (type eps)
+ <img/kategorie.eps>
+File: img/recept.eps Graphic file (type eps)
+ <img/recept.eps>
+File: img/results.eps Graphic file (type eps)
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-File: img/sablona3.eps Graphic file (type eps)
-<img/sablona3.eps>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-File: img/sablona2.eps Graphic file (type eps)
-<img/sablona2.eps>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
+<img/results.eps>
+File: img/extendedsearch.eps Graphic file (type eps)
+ <img/extendedsearch.eps>
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 88.
-[2] [3] [4]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 99.
- (/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
+(Font)              <5> on input line 138.
+ [2] [3] [4] [5] [6] [7] [8] [9]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 149.
+
+
+(/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 99.
- [5]
-Overfull \hbox (16.54341pt too wide) in paragraph at lines 125--126
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 149.
+ [10]
+Overfull \hbox (430.18314pt too wide) in paragraph at lines 170--171
+\OT1/cmr/m/n/12 Pln^^Se zne-nie do-tazn^^S^^Pku je k dis-poz^^S^^Pci^^S^^P on-l
+ine na na-sle-duj^^Sucej adrese:$\OML/cmm/m/it/12 https \OT1/cmr/m/n/12 : \OML/
+cmm/m/it/12 ==docs:google:com=forms=d=\OT1/cmr/m/n/12 15\OML/cmm/m/it/12 FoELc\
+OT1/cmr/m/n/12 4\OML/cmm/m/it/12 J\OT1/cmr/m/n/12 6\OML/cmm/m/it/12 ZJHIxecH\OT
+1/cmr/m/n/12 4\OML/cmm/m/it/12 XF\OT1/cmr/m/n/12 8\OML/cmm/m/it/12 qiGwKOVgvPHu
+TkCIRjy\OT1/cmr/m/n/12 6\OML/cmm/m/it/12 Hs=viewform$\OT1/cmr/m/n/12 . 
+ []
+
+
+Overfull \hbox (16.54341pt too wide) in paragraph at lines 176--177
 \OT1/cmr/m/n/12 Ciel[]om tohto testu boli otes-to-va-nie mo^^Tznosti jed-no-duc
 h^^Seho full-tex-tov^^Seho vyhl[]ad^^Savania. U^^Tz^^S^^Pvatel[]om
  []
 
 
-Overfull \hbox (35.61314pt too wide) in paragraph at lines 131--132
+Overfull \hbox (35.61314pt too wide) in paragraph at lines 182--183
 \OT1/cmr/m/n/12 Ciel[]om bolo testu bolo otes-to-vat[] mo^^Tznost[] edi-to-va-n
 ia re-ceptu. Za-da-nie ^^Sulohy znelo na-sle-dovne:"Editujte
  []
 
-[6]
-Overfull \hbox (2.20872pt too wide) in paragraph at lines 134--135
+
+Overfull \hbox (2.20872pt too wide) in paragraph at lines 185--186
 \OT1/cmr/m/n/12 Ciel[]om toho testu bolo otes-to-vat[] po-kro^^Tcil^^Se vyhl[]a
 d^^Savanie. Za-da-nie ^^Sulohy znelo: "Vyu^^Tzite mo^^Tznost[]
  []
 
-
-Overfull \hbox (27.48405pt too wide) in paragraph at lines 137--138
+[11]
+Overfull \hbox (27.48405pt too wide) in paragraph at lines 188--189
 \OT1/cmr/m/n/12 Ciel[]om tohto bolo otes-to-vat[] mo^^Tznost[] hod-no-te-nia je
 d-not-liv^^Sych re-cep-tov. Za-da-nie ^^Sulohy znelo:"Vyu^^Tzite
  []
 
-[7] [8] (./dokumentace.bbl) [9] (./dokumentace.aux)
+[12] (./dokumentace.bbl) [13] (./dokumentace.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6323 strings out of 493858
- 85258 string characters out of 1153329
- 166122 words of memory out of 3000000
- 9515 multiletter control sequences out of 15000+50000
+ 6331 strings out of 493858
+ 85370 string characters out of 1153329
+ 167122 words of memory out of 3000000
+ 9519 multiletter control sequences out of 15000+50000
  10056 words of font info for 35 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 38i,8n,36p,1221b,378s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,8n,36p,1221b,375s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on dokumentace.dvi (10 pages, 48776 bytes).
+Output written on dokumentace.dvi (14 pages, 53392 bytes).
