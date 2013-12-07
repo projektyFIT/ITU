@@ -58,7 +58,7 @@ Užívateľské rozhranie bolo navrhované s cieľom maximálne zjednodušiť pr
 
 \includegraphics[scale=0.7]{img/edit.eps} 
 \caption{Ukážka zobrazenia výsledkov}
-\label{koncept}
+
 
 \end{center}
 
@@ -70,7 +70,7 @@ Užívateľské rozhranie bolo navrhované s cieľom maximálne zjednodušiť pr
 
 \includegraphics[scale=0.7]{img/pridatrecept.eps} 
 \caption{Ukážka hlavičky}
-\label{koncept}
+
 
 \end{center}
 
@@ -82,7 +82,7 @@ Užívateľské rozhranie bolo navrhované s cieľom maximálne zjednodušiť pr
 
 \includegraphics[scale=0.7]{img/kategorie.eps} 
 \caption{Ukážka hlavičky}
-\label{koncept}
+
 
 \end{center}
 
@@ -96,7 +96,7 @@ Užívateľské rozhranie bolo navrhované s cieľom maximálne zjednodušiť pr
 
 \includegraphics[scale=0.7]{img/recept.eps} 
 \caption{Ukážka hlavičky}
-\label{koncept}
+
 
 \end{center}
 
@@ -109,7 +109,7 @@ Užívateľské rozhranie bolo navrhované s cieľom maximálne zjednodušiť pr
 
 \includegraphics[scale=0.7]{img/results.eps} 
 \caption{Ukážka hlavičky}
-\label{koncept}
+
 
 \end{center}
 
@@ -120,7 +120,7 @@ Užívateľské rozhranie bolo navrhované s cieľom maximálne zjednodušiť pr
 
 \includegraphics[scale=0.7]{img/extendedsearch.eps} 
 \caption{Ukážka hlavičky}
-\label{koncept}
+
 
 \end{center}
 
@@ -142,16 +142,16 @@ Táto kapitola sa zaoberá implementáciou a ukazuje možnosti implementácie el
 Výsledný projekt sa skladá so súborov s príponou .php, .css, .html, .js. Z toho dôvodu je potrebné mať k dispozícií webový server, na ktorom pobežia všetky potrebné služby. Hlavne treba, aby tento server podporoval MySQL minimálne vo verzii 5 a PHP vo verzii 5. Je potrebné naprv správne vytvoriť databázu podľa návrhu a následne ju naplň nejakými dátami(receptami). Pre správny beh je potrebné nastaviť oprávnenie 777 pre súbory s príponou php, pre ostatné súbory a priečinky oprávnenia 664.
 
 \section{Testovanie a vyhodnotenie}
-Aplikácia bola umiestnená na školský server odkiaľ ju mali prístupnú všetci užívatelia. Testovanie prebiehalo na základe dotazníka, ktorý bol predloženým cieľovým skupinám. Ďalej prebehlo vyhotovenie testov, kde sa merali rôzne veličiny typicky rýchlosť splnenia danej akcie a počet zbytočných pohybov. Na základe týchto testov sme mohli vyhodniť rôzne aspekty nášho užívatelského rozhrania. 
+Aplikácia bola umiestnená na školský server odkiaľ ju mali prístupnú všetci užívatelia. Testovanie prebiehalo na základe dotazníka, ktorý bol predloženým cieľovým skupinám. Ďalej prebehlo vyhotovenie testov, kde sa merali rôzne veličiny typicky rýchlosť splnenia danej akcie a počet zbytočných pohybov. Na základe týchto testov sme mohli vyhodniť rôzne aspekty nášho užívatelského rozhrania testovanie prebehlo na vzorke 5 užívateľov. 
 
 Na testovanie sme použili nasledujúce testovacie skupiny:
 \begin{itemize}
 \item Užívatelia od 15 - 25, ktorí majú snahu maximálne využívať informačné technológie
 \item Užívatelia 25 - 40, ktorí využívajú informačné technológie v menšom rozsahu
 \item Ženy vo veku 20 - 35, ktoré majú skúsenost s informačnými technológiami
-\item Užívatelia ženkého pohlavia od 15 - 40, ktorí majú minimálne alebo žiadne skúsenosti s inforačnými technológiami, ale zaujímajú sa o daný typ aplikácie
+\item Užívatelia ženkého pohlavia od 15 - 40, ktorí majú minimálne alebo žiadne skúsenosti s informačnými technológiami, ale zaujímajú sa o daný typ aplikácie
 \end{itemize}
-Každá testovacia skupina mala zastúpenie 10 užívateľov.
+Každá testovacia skupina mala zastúpenie 3 užívateľov.
 
 \subsection{Dotazník}
 Dotazník sa skladal z približne z nasledujúcich otázok:
@@ -184,15 +184,82 @@ Cieľom bolo testu bolo otestovať možnosť editovania receptu. Zadanie úlohy 
 \subsubsection{Test č.4}
 Cieľom toho testu bolo otestovať pokročilé vyhľadávanie. Zadanie úlohy znelo: "Využite možnosť pokročilého vyhľadávania a vyhľadajte všetky recepty s dobou prípravy medzi 5-10 minút". Užívateľ musel správne lokalizovať možnosť pokročilého vyhľadávania. Následne bol presmerovaný na formulár, do ktorého mohol zadať viaceré možnosti. Musel správne vybrať z rolovacieho zoznamu 5-10 minút a nechať ostatné možnosti nezmenené.
 
-\subsubsection{Test č.5}
-Cieľom tohto bolo otestovať možnosť hodnotenia jednotlivých receptov. Zadanie úlohy znelo:"Využite možnosť hodnotenia receptu a zvoľte najlepšie hodnotenie pre recept." Užívateľ mal už predpripravené okno s receptom. Užívateľ musel správne lokalizovať možnosť hodnotenia, ktorá bola reprezentovaná hviezdičkami. Musel správne určiť váhu, ktorú musel priradiť receptu. Musel určiť , že 5 hviezdičiek odpovedá najlepšiemu hodnoteniu.
 
 
 
 
-\subsection{Vyhodnotenie dotazníku a testov}
+\subsection{Vyhodnotenie testov}
+Postupne budem ukazovať priemernú dobu splnenia úlohy, počet zbytočné preklikov resp. počet uchádzačov, ktorý to neboli schopný vykonať. Poúkážem, ktoré časti aplikácie by sa dali vylepšiť.
 
-Dotazník bol predložený respondentom, ktorý na to odpovedali v nasledovnej podobe. Dospeli sme k veľmi zaujímavý výsledkom, ktoré nám pomohli priblížiťt zmýšlanie ľudí a ich prácu s novými užívateľskými rozhraniami.
+\subsubsection{Test č.1}
+Test je ako všetky iné testy boli prevádzané na vzorke 5 užívateľov. Tento sa podaril splniť všetkým uchádzačom. Priemerne im to trvalo 10 sekúnd a počet zbytočných prekliknutí bol 5. Tento test nám odhalil, že fulltextové vyhľadávanie musí byť farebné odlíšené pre lepšiu orientáciu.
+
+\subsubsection{Test č.2}
+Tento test bol z jeden najťažśich pre užívateľov. Na začiatku musí spomenúť, že tento test bol považovaný  z našej strany jeden z najťažších každému užívateľovi sa podarilo pridať úspešne nový recept. Každý užívateľ pomerne rýchlo(priemerne 5 sekúnd) lokalizoval tlačidlo na pridávanie receptov, ktoré sa nachádza v globálnom menu. Následne užívatelia pomerne rýchlo vedeli recept pomenovať, zmeniť dĺžku prípravy, pridať suroviny a uložiť. Priemerne celý test trval užívateľo 2 minúty.
+
+
+\subsubsection{Test č.3}
+Tento test bol pre väčšinu testovacích užívateľov jeden z najťažśich. Každému užívateľovi sa pomerne rýchlo podarilo zmeniť názov receptu, dĺžku prípravy, postup prípravy. Najväčším úskalím tohto testu bolo zmazanie suroviny. Kompletný test dokončilo len 66\,\% užívateľov.
+Z tohto testu nám jasne vyplynula potreba zmeniť tlačidlo na zmazanie receptu. Užívatelia potrebujú jasne zreteľnú označenú možnosť, aby ju mohli použiť. Priemerná dĺžka testu pre to bola 4 minúty.
+
+\subsubsection{Test č.4} 
+Tento test patril medzi najviac úspešné. Bolo to spôsobené jeho jednoduchosťou. Užívatelia správne identifikovali jednotlivé polia, ktoré treba správne vyplniť podľa zadania. Priemerná doba bola 30 sekúnd, čo bol aj nami odhadovaný čas.
+
+\subsection{Vyhodnotenie dotazníku}
+Dotazník bol predložený respondentom, ktorý na to odpovedali v nasledovnej podobe. Dospeli sme k veľmi zaujímavý výsledkom, ktoré nám pomohli priblížiťt zmýšlanie ľudí a ich prácu s novými užívateľskými rozhraniami. Táto kapitola bude pri každej otázke ukazovať najčastejšie sa vyskytuújce odpovede. Užívatelia najprv aplikáciu vyskúšali a následne vyplnili dotazník.
+\begin{itemize}
+\item "Koľko máte rokov ?"
+\item Väčšina respondentov odpovedala 15 až 25 rokov
+
+
+
+\item "Ako spravujete svoje recepty ?"
+\item Väčšina užívateľov odpovedala, že svoje recepty nespravuje. 
+
+\item "Na koľkých miestach spravujete svoje recepty ?"
+\item Väčšina respondetov odpovedala, že na 1 mieste.
+
+
+\item "Použili ste niekedy elektronickú kuchárku ?"
+ \item Väčšina  respondentov odpovedala, nie.
+
+\item "Aké informácie si poznamenávate k fotografiám ?"
+  \item Užívatelia si najčastejšie poznamenávajú názov receptu, suroviny a postup.
+  
+\item "Aký systém triedenia receptov by Vám najviac vyhovoval ?"
+\item Väčšina respondentov spravuje svoje recepty abecedne.
+
+\item "Aké dôležité sú pre Vás nasledujúce funkcie ?"
+\item 1 - najmenej dôležité. 5  - najdôležitejšie.
+\item "Možnosť vyhľadávať recept podľa viacerých kritérií:"
+\item Priemerné hodnotenie boli 3, čo je priemerné.
+
+\item "Možnosť zdieľať recepty	"
+\item Priemerné hodnotenie respondentov bolo 5.
+
+\item "Hodnotenie receptov"
+\item Priemerná odpoveď užívateľov bola 1.
+
+
+\item "Ako hodnotíte systém pridávania nových receptov ?"
+\item Priemerné hodnotenie respondentov bolo 3.
+
+
+\item "Ako hodnotíte vyhľadávanie receptov ?"
+\item Väčšina užívateľov odpovedala 4.
+
+
+\item "Aký dojem máte s prehliadania receptov ?"
+\item Väčšina užívateľov odpovedala 4.
+
+\item "Ktorá funkcionalita bola príliš skytá ?"
+\item Väčšina užívateľov odpovedala, že sa im nepáčila možnosť prehliadania receptov.
+ 
+\item "Aká funkcionalita vám chýbala?"
+\item Užívatelia by najviac ocenili mať možnosť zdieľania receptov. 
+\end{itemize}
+Z tohto dotazníka nám jasne vyplyli chyby nášho riešenia. Mali by sme sa zamerať na pridanie dalšej funkcionality, ktorá by urobila našu aplikáciu oveľa príťažlivejšiu pre užívateľov. Rovnako by trebalo niektoré funkcie a užívateľské rozhranie zmeniť, aby boli viac prístupné.
+
 
 \section{Použité zdroje}
 Pri návrhu a implementácií užívateľského rozhrania sme využili rôzne informačné zdroje, ktoré nám pomohli a ozrejmili implementáciu. Hlavný zdrojom informácií boli manuálové stránky k použitým implementačným jazyk. Niekedy sme narážali na problém v anglickej lokalizácií a problém s porozumením pojmov a funkcií. Veľmi nám ale pomohli ilustrované príklady, ktoré sa nachádzali taktiež na manuálovej stránke. Rovnako sme informovali o dostupných elektronických kuchařkách a použitých užívateľských rozhraniach. Pre získanie ďalších hodnoverných informácií sme využili dostupnú literatúru. Táto je spomenutá v kapitole "Reference".
