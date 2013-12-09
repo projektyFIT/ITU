@@ -2,7 +2,8 @@
 \contentsline {section}{\numberline {1}\IeC {\'U}vod}{2}{section.1}
 \contentsline {section}{\numberline {2}Motiv\IeC {\'a}cia}{2}{section.2}
 \contentsline {section}{\numberline {3}Grafick\IeC {\'e} rozhranie}{2}{section.3}
-\contentsline {subsection}{\numberline {3.1}Inovat\IeC {\'\i }vnos\IeC {\v t}}{2}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.1}Popis \IeC {\v c}ast\IeC {\'\i } rozhrania}{2}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Inovat\IeC {\'\i }vnos\IeC {\v t}}{2}{subsection.3.2}
 \contentsline {section}{\numberline {4}Implement\IeC {\'a}cia}{10}{section.4}
 \contentsline {section}{\numberline {5}In\IeC {\v s}tal\IeC {\'a}cia}{10}{section.5}
 \contentsline {section}{\numberline {6}Testovanie a vyhodnotenie}{10}{section.6}
@@ -10,14 +11,14 @@
 \contentsline {subsection}{\numberline {6.2}Testy}{11}{subsection.6.2}
 \contentsline {subsubsection}{\numberline {6.2.1}Test \IeC {\v c}.1}{11}{subsubsection.6.2.1}
 \contentsline {subsubsection}{\numberline {6.2.2}Test \IeC {\v c}.2}{11}{subsubsection.6.2.2}
-\contentsline {subsubsection}{\numberline {6.2.3}Test \IeC {\v c}.3}{11}{subsubsection.6.2.3}
+\contentsline {subsubsection}{\numberline {6.2.3}Test \IeC {\v c}.3}{12}{subsubsection.6.2.3}
 \contentsline {subsubsection}{\numberline {6.2.4}Test \IeC {\v c}.4}{12}{subsubsection.6.2.4}
 \contentsline {subsection}{\numberline {6.3}Vyhodnotenie testov}{12}{subsection.6.3}
 \contentsline {subsubsection}{\numberline {6.3.1}Test \IeC {\v c}.1}{12}{subsubsection.6.3.1}
 \contentsline {subsubsection}{\numberline {6.3.2}Test \IeC {\v c}.2}{12}{subsubsection.6.3.2}
 \contentsline {subsubsection}{\numberline {6.3.3}Test \IeC {\v c}.3}{12}{subsubsection.6.3.3}
-\contentsline {subsubsection}{\numberline {6.3.4}Test \IeC {\v c}.4}{12}{subsubsection.6.3.4}
-\contentsline {subsection}{\numberline {6.4}Vyhodnotenie dotazn\IeC {\'\i }ku}{12}{subsection.6.4}
+\contentsline {subsubsection}{\numberline {6.3.4}Test \IeC {\v c}.4}{13}{subsubsection.6.3.4}
+\contentsline {subsection}{\numberline {6.4}Vyhodnotenie dotazn\IeC {\'\i }ku}{13}{subsection.6.4}
 \contentsline {section}{\numberline {7}Pou\IeC {\v z}it\IeC {\'e} zdroje}{14}{section.7}
 \contentsline {section}{\numberline {8}Z\IeC {\'a}ver}{14}{section.8}
 \contentsline {section}{\numberline {9}Referencie}{15}{section.9}

@@ -26,20 +26,22 @@
 \newpage
 
 \section{Úvod}
-Táto dokumentácia sa zaoberá vývojom, implementáciou a testovaním elektornickej kuchařky. Je rozdelená do kapitól, ktoré sa zaoberajú rôznymi aspektami projektu.Túto tému sme si vybrali z dôvodu vysokého dopytu užívateľov pre daný typ aplikácie a možnosť súkromného využitia. 
+Táto dokumentácia sa zaoberá vývojom, implementáciou a testovaním elektronickej kuchařky. Je rozdelená do kapitol, ktoré sa zaoberajú rôznymi aspektami projektu.Túto tému sme si vybrali z dôvodu vysokého dopytu užívateľov pre daný typ aplikácie a možnosť súkromného využitia. 
 
 
 \section{Motivácia}
-Počítače stále viac a viac vnikajú do bežných činností človeka a snažia sa mu uľahčiť a urýchliť prácu. V poslednej dobe viac a viac užívateľov má prístup k internetu a využíva ho na získanie všemožných informácií. Jednou s týchto informácií býva často kuchársky recept. Tento recept by mal spĺňať požadované kvality, byť jednoduchý rýchly, overený a jasne formulované. Užívateľ pristupujúcu k takejto služby má istej dobe snahy vložiť si do zbierky vlastné recepty. Tieto recepty chce hodnotiť, alebo ich upravovať po prípade ich zmazať. Jednotlivé recepty by si rád zaradil do kategórií. Z tohto dôvodu sme sa rozhdoli implementovať zadanie Elektronickej kuchařky, ktoré spĺňa všetky tieto požiadavky užívateľov. Snahou bolo zamerať sa na mladých užívateľov, ktorým nerobí problém interakcia s novou aplikáciou, muži alebo ženy. Aplikácia nie je určená pre zrakovo znevýhodneých užívateľov, keďźe aplikácia neobsahuje možnosti pre čítačky rovnako ani aj pre užívateľov staršieho veku, ktorí majú problémy so zrakom.
+Počítače stále viac a viac vnikajú do bežných činností človeka a snažia sa mu uľahčiť a urýchliť prácu. V poslednej dobe viac a viac užívateľov má prístup k internetu a využíva ho na získanie všemožných informácií. Jednou s týchto informácií býva často kuchársky recept. Tento recept by mal spĺňať požadované kvality, byť jednoduchý rýchly, overený a jasne formulovaný. Užívateľ pristupujúcu k takejto službe má po istej dobe snahy vložiť si do zbierky vlastné recepty. Tieto recepty chce hodnotiť, alebo ich upravovať po prípade ich zmazať. Jednotlivé recepty by si rád zaradil do kategórií. Z tohto dôvodu sme sa rozhodli implementovať zadanie Elektronickej kuchařky, ktoré spĺňa všetky tieto požiadavky užívateľov. Snahou bolo zamerať sa na mladých užívateľov, ktorým nerobí problém interakcia s novou aplikáciou, muži alebo ženy. Aplikácia nie je určená pre zrakovo znevýhodneých užívateľov, keďže aplikácia neobsahuje možnosti pre čítačky rovnako ani aj pre užívateľov staršieho veku, ktorí majú problémy so zrakom.
 
 \section{Grafické rozhranie}
-Užívateľské rozhranie bolo navrhované s cieľom maximálne zjednodušiť prácu užívateľa s aplikáciou. Aby kĺadlo dôraz na jednoduchosť a miernu inovatívnosť riešenia. Užívateľ je schopný sa s rozhraním pomerne rýchlo zoznámiť a plne ho využívať pre dosiahnutie svojich výsledkov. Jednotlivé časti sú farebne rozdelené, aby možnosti, ktoré užívateľ bude využívať pomerne často mal stále na očiach. Rozhranie sa skladá z hlavnej lišty, ktorá je prístupná v každom okamihu práce s aplikáciou. Pred samotnou fázou implementácie prebiehali viaceré stretnutia členov tímu, ktorých cieľom bolo návrh optimálne a dostatočne jednoduché rozhranie pre používanie boli tam pridané inovatívne prvky, ktorých cieľom bolo spestriť a zaujať užívateĺa o naše riešenie.\cite{Stephen:Rozhrania}
+Užívateľské rozhranie bolo navrhované s cieľom maximálne zjednodušiť prácu užívateľa s aplikáciou. Aby kĺadlo dôraz na jednoduchosť a miernu inovatívnosť riešenia. Užívateľ je schopný sa s rozhraním pomerne rýchlo zoznámiť a plne ho využívať pre dosiahnutie svojich výsledkov. Jednotlivé časti sú farebne rozdelené, aby možnosti, ktoré užívateľ bude využívať pomerne často mal stále na očiach. Rozhranie sa skladá z hlavnej lišty, ktorá je prístupná v každom okamihu práce s aplikáciou. Pred samotnou fázou implementácie prebiehali viaceré stretnutia členov tímu, ktorých cieľom bolo návrh optimálneho a dostatočne jednoduchého rozhranie pre používanie boli tam pridané inovatívne prvky, ktorých cieľom bolo spestriť a zaujať užívateĺa o naše riešenie.\cite{Stephen:Rozhrania}
+
+\subsection{Popis častí rozhrania}
 \begin{figure}
 
 \begin{center}
 
 \includegraphics[scale=0.7]{img/home.eps} 
-\caption{Ukážka zobrazenia výsledkov}
+\caption{Ukážka hlavnej stránky}
 \label{koncept}
 
 \end{center}
@@ -57,7 +59,7 @@ Užívateľské rozhranie bolo navrhované s cieľom maximálne zjednodušiť pr
 \begin{center}
 
 \includegraphics[scale=0.7]{img/edit.eps} 
-\caption{Ukážka zobrazenia výsledkov}
+\caption{Ukážka editovania receptov}
 
 
 \end{center}
@@ -69,7 +71,7 @@ Užívateľské rozhranie bolo navrhované s cieľom maximálne zjednodušiť pr
 \begin{center}
 
 \includegraphics[scale=0.7]{img/pridatrecept.eps} 
-\caption{Ukážka hlavičky}
+\caption{Ukážka pridávania receptov}
 
 
 \end{center}
@@ -81,7 +83,7 @@ Užívateľské rozhranie bolo navrhované s cieľom maximálne zjednodušiť pr
 \begin{center}
 
 \includegraphics[scale=0.7]{img/kategorie.eps} 
-\caption{Ukážka hlavičky}
+\caption{Ukážka kategórie}
 
 
 \end{center}
@@ -95,7 +97,7 @@ Užívateľské rozhranie bolo navrhované s cieľom maximálne zjednodušiť pr
 \begin{center}
 
 \includegraphics[scale=0.7]{img/recept.eps} 
-\caption{Ukážka hlavičky}
+\caption{Ukážka receptu}
 
 
 \end{center}
@@ -108,7 +110,7 @@ Užívateľské rozhranie bolo navrhované s cieľom maximálne zjednodušiť pr
 \begin{center}
 
 \includegraphics[scale=0.7]{img/results.eps} 
-\caption{Ukážka hlavičky}
+\caption{Ukážka zobrazenia výsledkov}
 
 
 \end{center}
@@ -119,7 +121,7 @@ Užívateľské rozhranie bolo navrhované s cieľom maximálne zjednodušiť pr
 \begin{center}
 
 \includegraphics[scale=0.7]{img/extendedsearch.eps} 
-\caption{Ukážka hlavičky}
+\caption{Ukážka rožšíreného vyhľadávania}
 
 
 \end{center}
@@ -127,10 +129,10 @@ Užívateľské rozhranie bolo navrhované s cieľom maximálne zjednodušiť pr
 \end{figure}
 
 
-Výsledkom jednotlivých Obsahuje možnosti na zobrazenie jednotlivých kategórií jedál, fulltextové vyhľadávanie v názvoch, možnosť pridania receptu  a tak isto možnosť pokročilého vyhľadávania. V ďalšej kapitole sa bude zaoberať implementáciou riešenia. 
+ V ďalšej kapitole sa bude zaoberať implementáciou riešenia. 
 
 \subsection{Inovatívnosť}
-Aplikácia neprínašla veľa nových možností. Ponúkala štandardné funkcie, na ktoré sa kladol dôraz, aby boli jednoduché a ľahko používateľné. S inovatívnym prístupom by som rád spomenul možnosti pokročilého vyhľadánia. Užívateľ mal širokú možnosť vyhľadávania a to podľa názvu v recepte, postupu, času prípravy, kategórií receptu.
+Aplikácia neprináša veľa nových možností. Ponúkala štandardné funkcie, na ktoré sa kladol dôraz, aby boli jednoduché a ľahko používateľné. S inovatívnym prístupom by som rád spomenul možnosti pokročilého vyhľadánia. Užívateľ mal širokú možnosť vyhľadávania a to podľa názvu v recepte, postupu, času prípravy, kategórií receptu. V rámci rozšírenia by sa jedla o systém hodnotenia receptov podľa ktorého by sa dalo vyhľadávať.
 
 
 
@@ -152,7 +154,7 @@ Na testovanie sme použili nasledujúce testovacie skupiny:
 \item Ženy vo veku 20 - 35, ktoré majú skúsenost s informačnými technológiami
 \item Užívatelia ženkého pohlavia od 15 - 40, ktorí majú minimálne alebo žiadne skúsenosti s informačnými technológiami, ale zaujímajú sa o daný typ aplikácie
 \end{itemize}
-Každá testovacia skupina mala zastúpenie 3 užívateľov.
+Každá testovacia skupina mala zastúpenie 2 užívateľov.
 
 \subsection{Dotazník}
 Dotazník sa skladal z približne z nasledujúcich otázok:
@@ -204,7 +206,7 @@ Tento test bol pre väčšinu testovacích užívateľov jeden z najťažśich. 
 Z tohto testu nám jasne vyplynula potreba zmeniť tlačidlo na zmazanie receptu. Užívatelia potrebujú jasne zreteľnú označenú možnosť, aby ju mohli použiť. Priemerná dĺžka testu pre to bola 4 minúty.
 
 \subsubsection{Test č.4} 
-Tento test patril medzi najviac úspešné. Bolo to spôsobené jeho jednoduchosťou. Užívatelia správne identifikovali jednotlivé polia, ktoré treba správne vyplniť podľa zadania. Priemerná doba bola 30 sekúnd, čo bol aj nami odhadovaný čas.
+Tento test patril medzi najviac úspešné. Bolo to spôsobené jeho jednoduchosťou. Užívatelia správne identifikovali jednotlivé polia, ktoré bolo treba správne vyplniť podľa zadania. Priemerná doba bola 30 sekúnd, čo bol aj nami odhadovaný čas.
 
 \subsection{Vyhodnotenie dotazníku}
 Dotazník bol predložený respondentom, ktorý na to odpovedali v nasledovnej podobe. Dospeli sme k veľmi zaujímavý výsledkom, ktoré nám pomohli priblížiťt zmýšlanie ľudí a ich prácu s novými užívateľskými rozhraniami. Táto kapitola bude pri každej otázke ukazovať najčastejšie sa vyskytuújce odpovede. Užívatelia najprv aplikáciu vyskúšali a následne vyplnili dotazník.
@@ -259,11 +261,11 @@ Dotazník bol predložený respondentom, ktorý na to odpovedali v nasledovnej p
 \item "Aká funkcionalita vám chýbala?"
 \item Užívatelia by najviac ocenili mať možnosť zdieľania receptov. 
 \end{itemize}
-Z tohto dotazníka nám jasne vyplyli chyby nášho riešenia. Mali by sme sa zamerať na pridanie dalšej funkcionality, ktorá by urobila našu aplikáciu oveľa príťažlivejšiu pre užívateľov. Rovnako by trebalo niektoré funkcie a užívateľské rozhranie zmeniť, aby boli viac prístupné.
+Z tohto dotazníka nám jasne vyplyli chyby nášho riešenia. Mali by sme sa zamerať na pridanie dalšej funkcionality, ktorá by urobila našu aplikáciu oveľa príťažlivejšiu pre užívateľov. Rovnako by trebalo niektoré funkcie a užívateľské rozhranie zmeniť, aby boli viac prístupné. Užívatelia by si rovnako radi priali, aby mali recepty rozdelené do kategórií abecedne. Ďalej tu vyplýva nutnosť pridať zdielanie receptov.
 
 
 \section{Použité zdroje}
-Pri návrhu a implementácií užívateľského rozhrania sme využili rôzne informačné zdroje, ktoré nám pomohli a ozrejmili implementáciu. Hlavný zdrojom informácií boli manuálové stránky k použitým implementačným jazyk. Niekedy sme narážali na problém v anglickej lokalizácií a problém s porozumením pojmov a funkcií. Veľmi nám ale pomohli ilustrované príklady, ktoré sa nachádzali taktiež na manuálovej stránke. Rovnako sme informovali o dostupných elektronických kuchařkách a použitých užívateľských rozhraniach. Pre získanie ďalších hodnoverných informácií sme využili dostupnú literatúru. Táto je spomenutá v kapitole "Reference".
+Pri návrhu a implementácií užívateľského rozhrania sme využili rôzne informačné zdroje, ktoré nám pomohli a ozrejmili implementáciu. Hlavný zdrojom informácií boli manuálové stránky k použitým implementačným jazykom. Niekedy sme narážali na problém v anglickej lokalizácií a problém s porozumením pojmov a funkcií. Veľmi nám ale pomohli ilustrované príklady, ktoré sa nachádzali taktiež na manuálovej stránke. Rovnako sme informovali o dostupných elektronických kuchařkách a použitých užívateľských rozhraniach. Pre získanie ďalších hodnoverných informácií sme využili dostupnú literatúru. Táto je spomenutá v kapitole "Reference".
 
 \section{Záver}
 Cieľom tejto dokumentácie bolo ukázať možnosť implementácie elektronickej kuchařky. Rovnako bolo ukázané navrhnuté užívateľské rozhranie, ktoré bolo navrhnuté so zreteľom na maximálnu jednoduchosť a inovatívny prístup. Pomocou dotazníku a testov sme došli k záverom, že návrh rozhrania sa dá ešte vylepšiť, aby odpovedal požiadavkam užívateľom. Rovnako sme získali skúsenosť s tvorbou dotazníkov a testov a prácu s užívateľmi. Dotazy užívateľov nás podnietil k novej činnosti a pridali nám nové skúsenosti, ktoré využijeme v budúcnosti pri tvorbe užívateľských rozhraní.
