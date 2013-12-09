@@ -36,6 +36,16 @@ Počítače stále viac a viac vnikajú do bežných činností človeka a snaž
 Užívateľské rozhranie bolo navrhované s cieľom maximálne zjednodušiť prácu užívateľa s aplikáciou. Aby kĺadlo dôraz na jednoduchosť a miernu inovatívnosť riešenia. Užívateľ je schopný sa s rozhraním pomerne rýchlo zoznámiť a plne ho využívať pre dosiahnutie svojich výsledkov. Jednotlivé časti sú farebne rozdelené, aby možnosti, ktoré užívateľ bude využívať pomerne často mal stále na očiach. Rozhranie sa skladá z hlavnej lišty, ktorá je prístupná v každom okamihu práce s aplikáciou. Pred samotnou fázou implementácie prebiehali viaceré stretnutia členov tímu, ktorých cieľom bolo návrh optimálneho a dostatočne jednoduchého rozhranie pre používanie boli tam pridané inovatívne prvky, ktorých cieľom bolo spestriť a zaujať užívateĺa o naše riešenie.\cite{Stephen:Rozhrania}
 
 \subsection{Popis častí rozhrania}
+Na obrázku č. \ref{koncept} můžeme vidět úvodní stranu elektronické kuchařky. Můžeme si povšimnout menu umístěné v horní části webové stránky. Menu se zobrazuje ve všech webových stránkách elektronické kuchařky. Toto menu slouží k rychlé a efektivní práci sloužící pro pohodlí uživatelů. Nacházíme v něm záložky \textbf{Domu}, \textbf{Kategorie}, \textbf{Přidat recept}, \textbf{Rozšířené vyhledávání} a rychlé vyhledávání \textbf{Hledej...}. \newline
+Při stisku záložky \textbf{Domu} je uživatel přesměrován na úvodní stranu obr. č. \ref{koncept}.\newline
+Při stisku záložky \textbf{Kategorie} se uživatelovi zobrazí skupiny kategorií obr. č. \ref{kategorie}. Pokud uživatel stisne jednu z kategorií, tak je přesměrován na stránku dané kategorie.\newline
+Při stisku záložky \textbf{Přidat recept} je uživatel přesměrován na webovou stránku \textbf{Přídání nového receptu} obr. č. \ref{pridani}.\newline
+Při stisku záložky \textbf{Rozšířené vyhledávání} je uživatel přesměrován na webovou stránku \textbf{Ukážka rožšíreného vyhľadávania} obr. č. \ref{rozVyhledavani}.\newline
+Poslední záložka \textbf{Hledej...} slouží k rychlému vyhledávání receptů.\newline
+Dále na obrázku č. \ref{koncept} můžeme vidět 6 základních kategorií. Uživatel, kliknutím na jednu z nich, je přesměrová přímo na výběr jídel dané kategrie. V případě kategorie \textbf{Polévky} je přesměrován na webovou stránku obr. č. \ref{kategorie}.\newline
+V dolní části webové stránky si můžeme všimnout šítku s autory elektronické kuchařky, ten se zobrazuje také na každé z webových stránek kuchařky.\newline
+
+
 \begin{figure}
 
 \begin{center}
@@ -48,11 +58,7 @@ Užívateľské rozhranie bolo navrhované s cieľom maximálne zjednodušiť pr
 
 \end{figure}
 
-
-
-
-
-
+Na dalším obrázku č. \ref{edit} vidíme formulář pro editování již existujícího receptu. Uživatel může změnit název jídla, přidat nebo odebrat suroviny, změnit obrázek k jídlu, dále může změnit popis tvorby jídla, změnit může také délku přípravy jídla a v neposlední řadě může změnit pod jakou kategorii jídlo patří. Pro uchování změn, které uživatel provedl, musí zmáčnout tlačítko \textbf{Ulož}. V případě zmáčknutí talčítka \textbf{Zrušit} se změny provedené uživatelem ztratí. Po zmáčknutí tlačítka \textbf{Ulož} nebo \textbf{Zrušit} je uživatel přesměrován na stránku s daným receptem.\newline
 
 \begin{figure}
 
@@ -60,11 +66,13 @@ Užívateľské rozhranie bolo navrhované s cieľom maximálne zjednodušiť pr
 
 \includegraphics[scale=0.7]{img/edit.eps} 
 \caption{Ukážka editovania receptov}
-
+\label{edit}
 
 \end{center}
 
 \end{figure}
+
+Na obrázku č. \ref{pridani} vidíme formulář velmi podobný editaci receptů s tím rozdílem, že formulář je naprosto prázdný. Uživatel zde může vytvořit nový recept podle své nejlepší vůle. Přidává parametry receptu jako v předchozím případě a poté co stiskne talčítko \textbf{Ulož} se nový recept uloží do databáze elektronické kuchařky. V případě, že si uživatel rozmyslí, že recept uložit na webové stránky nechce, tak zmáčkne tlačítko \textbf{Zrušit}. Tlačítko \textbf{Ulož} uživatele přesměruje na webovou stránku s novým receptem, narozdíl tlačítko \textbf{Zrušit} přesměruje uživatele na hlavní stránku kuchařky.\newline
 
 \begin{figure}
 
@@ -72,11 +80,13 @@ Užívateľské rozhranie bolo navrhované s cieľom maximálne zjednodušiť pr
 
 \includegraphics[scale=0.7]{img/pridatrecept.eps} 
 \caption{Ukážka pridávania receptov}
-
+\label{pridani}
 
 \end{center}
 
 \end{figure}
+
+Na dalším obrázku č. \ref{kategorie} vidíme, webovou stránku jedné z vybraných kategorií jídel. Zde se nachzází seznam jídel spadající pod tuto kategorii. Uživatel, po vybrání jednoho receptu, je přesměrován na stránku s tímto konkrétním receptem. Uživatel se také může pomocí tlačítek \textbf{Předchozí recepty} a \textbf{Další recepty} dostat k dalším receptů dané kategorie. Tyto tlačítka jsou umýstěná v dolní části stránky.\newline
 
 \begin{figure}
 
@@ -84,13 +94,13 @@ Užívateľské rozhranie bolo navrhované s cieľom maximálne zjednodušiť pr
 
 \includegraphics[scale=0.7]{img/kategorie.eps} 
 \caption{Ukážka kategórie}
-
+\label{kategorie}
 
 \end{center}
 
 \end{figure}
 
-
+Další obrázek č. \ref{recept} představuje webovou stránku konkrétního receptu. Zde uživatel vidí potřebné informace pro vytvoření jídla daného receptu. V dolní části webové stránky si můžeme povšimnout tlačítek pro editaci nebo zrušení receptu. Při stisku tlačítka \textbf{Editovat} je uživatel přesměrován na webobou stránku \textbf{Editace receptu} obr. č. \ref{edit} konkrétního receptu. Při zmáčknutí tlačítka \textbf{Smazat} se smažou veškeré informace o receptu z databáze elektronické kuchařky a uživatel je přesměrován na hlavní webovou stranku kuchařky.\newline
 
 \begin{figure}
 
@@ -98,12 +108,14 @@ Užívateľské rozhranie bolo navrhované s cieľom maximálne zjednodušiť pr
 
 \includegraphics[scale=0.7]{img/recept.eps} 
 \caption{Ukážka receptu}
+\label{recept}
 
 
 \end{center}
 
 \end{figure}
 
+Na dalším obrázku č. \ref{vysledky} vidíme výsledky vyhledávání. V horní části vidíme slovo, podle kterého jsme vyhledávali recept. Pod tímto klíčovým slovem vyhledávání se nám zobrazí recepty s názvy, které se shodují s klíčovým vyhledávacím slovem. Pod zobrazenými recepty jsou tlačítka určená pro průchod dalšími recepty, které mají shodu v názvu s vyhledávacím slovem. Uživatel se kliknutím na daný recept dostane na webovou stránku receptu např. obr. č. \ref{recept}.\newline
 
 \begin{figure}
 
@@ -111,18 +123,20 @@ Užívateľské rozhranie bolo navrhované s cieľom maximálne zjednodušiť pr
 
 \includegraphics[scale=0.7]{img/results.eps} 
 \caption{Ukážka zobrazenia výsledkov}
-
+\label{vysledky}
 
 \end{center}
 
 \end{figure}
+
+V případě posledního obrázku č. \ref{rozVyhledavani} vidíme možnost rozšířeného vyhledávání. Zde uživatel může zadat více kritérií pro vyhledávání receptů než podle jména. Uživatel může vybrat jen několik kritérií ze všech, které jsou mu nabízeny. Není limitován vyplnění všech kritérií. V případě, že zadal jemu dostačující informace na vyhledání receptu, zmáčkne tlačítko \textbf{Hledat}. Poté je uživatel přesměrován na stránku, kde může videt seznam receptů shodující se s tím, co zadal.  
 
 \begin{figure}
 \begin{center}
 
 \includegraphics[scale=0.7]{img/extendedsearch.eps} 
 \caption{Ukážka rožšíreného vyhľadávania}
-
+\label{rozVyhledavani}
 
 \end{center}
 
